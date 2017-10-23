@@ -1,30 +1,36 @@
 \documentclass{resume} % Use the custom resume.cls style
-\usepackage{fontawesome}
+%\documentclass{twocolumn} % Use the custom resume.cls style
+\usepackage{fontawesome,graphicx}
 \usepackage[hidelinks]{hyperref}
 \usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.3in]{geometry} % Document margins
 
+\newcommand*{\img}[1]{%
+	\raisebox{-.02\baselineskip}{%
+		\includegraphics[
+		height=\baselineskip,
+		width=\baselineskip,
+		keepaspectratio,
+		]{#1}%
+	}%
+}
+
 \name{Sergei Volodin}
-\address{sergei.volodin@epfl.ch}
-\address{+41 78 732 01 34}
+\address{sergei.volodin@epfl.ch \href{http://sergeivolodin.github.io}{\img{./img/www.png}}
+	\href{http://linkedin.com/in/sergeivolodin/}{\img{./img/li.png}} \href{http://github.com/sergeivolodin}{\img{./img/gh.png}}
+	\href{https://www.facebook.com/sergeivolodinepfl}{\img{./img/fb.png}} +41 78 732 01 34}
 \address{Rue du Verneret 10A, 1373 Chavornay, Vaud, Switzerland}
 %\address{Birth date: 3 October 1994}
-
+\twocolumn
 \begin{document}
-\begin{rSection}{Links}
-\item \faExternalLink~\href{http://sergeivolodin.github.io}{Website}
-\item \faExternalLink~\href{http://linkedin.com/in/sergeivolodin/}{Linkedin}, \faExternalLink~\href{github.com/sergeivolodin}{Github}: sergeivolodin
-\item \faExternalLink~\href{https://www.facebook.com/sergeivolodinepfl}{Facebook}: sergeivolodinepfl
-\item Skype: sergeyvolodinmipt
-\end{rSection}
 
 \begin{rSection}{Education}
-\begin{rSubsection}{\bf \'Ecole Polytechnique F\'ed\'erale de Lausanne}{Sep 2017 -- Jun 2019}{MSc in Computer Science}{Lausanne, Switzerland}
-\item School of Computer and Communication Sciences
+\begin{rSubsection}{\bf \'Ecole Polytechnique F\'ed\'erale de Lausanne}{\\Sep 2017 -- Jun 2019}{MSc in Computer Science}{Lausanne, Switzerland}
+%\item School of Computer and Communication Sciences
 \item Relevant courses: Set theory, Machine Learning, Functional Programming (Scala), Software Engineering (Android, Scrum).
 \end{rSubsection}
 
 \begin{rSubsection}{\bf Moscow Institute of Physics and Technology}{Sep 2012 -- Jun 2017}{BSc in Applied Mathematics}{Moscow, Russia}
-\item Department of Control and Applied Mathematics
+%\item Department of Control and Applied Mathematics
 \item \faExternalLink~\href{http://www.machinelearning.ru/}{Major} in {\bf Machine Learning}
 \item Relevant courses: Algorithms and Data Structures, Functional analysis, Random processes, Convex Optimization.
 \item GPA: {\bf 4.84}/5.00
@@ -46,7 +52,7 @@
 	
 	\begin{rSubsection}{Skoltech, Center for Energy Systems}{Sep 2016 -- Jul 2017}{Research Intern}{Moscow, Russia}
 %		\item Worked on the Power Flow Feasibility problem with Prof. Anatoly Dymarsky, Dr. Elena Gryazina, and Prof. Boris T. Polyak
-		\item Designed and implemented the algorithm for cutting convex parts of the image of a quadratic map. \faExternalLink~\href{https://github.com/sergeivolodin/CertificateCutting}{Repository}
+		\item Designed and implemented \faExternalLink~\href{https://github.com/sergeivolodin/CertificateCutting}{the algorithm} for cutting convex parts of the image of a quadratic map.
 		\item Examined the structure of the set of nonconvexities in Matlab
 	\end{rSubsection}
 	
@@ -56,20 +62,20 @@
 %		\item The results were published in ITAS proceedings
 	\end{rSubsection}
 	
-	\begin{rSubsection}{MIPT, chair of Theoretical Mechanics}{Oct 2012 -- Feb 2013}{Technician}{Moscow, Russia}
-%		\item Worked on the paper ``Janibekov's effect and the laws of mechanics'' with A.G. Petrov
-		\item Designed and implemented numerical simulations for Euler's rotation equations
-		\item Checked soundness of the approximation using symbolic computations in Wolfram Mathematica
-%		\item The results were published in Doklady Akademii Nauk
-	\end{rSubsection}
+%	\begin{rSubsection}{MIPT, chair of Theoretical Mechanics}{Oct 2012 -- Feb 2013}{Technician}{Moscow, Russia}
+%%		\item Worked on the paper ``Janibekov's effect and the laws of mechanics'' with A.G. Petrov
+%		\item Designed and implemented numerical simulations for Euler's rotation equations
+%		\item Checked soundness of the approximation using symbolic computations in Wolfram Mathematica
+%%		\item The results were published in Doklady Akademii Nauk
+%	\end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Publications}
 %\item On the feasibility for the system of quadratic equations, Anatoly Dymarsky, Elena Gryazina, Boris Polyak, {\bf Sergei Volodin} {\em (expected)}
-\item {\bf Volodin S.}, Popova M., Strijov V. Probabilistic prediction of nuclear receptors’ biological activity.\\ Proceedings of ITaS, 2016. \faExternalLink~\href{http://itas2016.iitp.ru/pdf/1570303389.pdf}{PDF}
-\item Petrov A., {\bf Volodin S.} Janibekov’s effect and the laws of mechanics.\\ Doklady Akademii Nauk, 2013. \faExternalLink~\href{https://link.springer.com/article/10.1134/S1028335813080041}{PDF}
+%\item {\bf Volodin S.}, Popova M., Strijov V. Probabilistic prediction of nuclear receptors’ biological activity.\\ Proceedings of ITaS, 2016. \faExternalLink~\href{http://itas2016.iitp.ru/pdf/1570303389.pdf}{PDF}
+\item Petrov A., {\bf Volodin S.} \faExternalLink~\href{https://link.springer.com/article/10.1134/S1028335813080041}{Janibekov’s effect and the laws of mechanics}. Doklady Akademii Nauk, 2013.
 \end{rSection}
-
+\newpage
 \begin{rSection}{Conferences}
 \item \faExternalLink~\href{http://iitp.ru/en/conferences/itas}{Information Technologies and Systems} (Saint-Petersburg, Repino, 2016){, \em Speaker}
 \item \faExternalLink~\href{https://sites.google.com/site/traditionalschool/about}{School} ``Control, Information, Optimization'' (Saint-Petersburg, Repino, 2016){, \em Poster presenter}
@@ -77,16 +83,16 @@
 \end{rSection}
 
 \begin{rSection}{Skills}
-	\item {\bf Scientific programming:} numpy, scikit-learn, MATLAB, Mathematica, TensorFlow, Theano, R
-	\item {\bf Programming:} C/C++, Python, AVR C++, Qt, Scala, Java, nasm, MS SQL
+	\item {\bf Scientific programming:} numpy, scikit-learn (PCC project), MATLAB (CAQM project), Mathematica (Theoretical mechanics), TensorFlow, Theano (DeepHack), R (course)
+	\item {\bf Programming:} C/C++ (HFT), Python (EscapeControl), AVR C++ (EscapeControl), Qt (Quadcopter), Scala, Java (EPFL), nasm, MS SQL (MIPT)
 	\item {\bf Frameworks:} Qt, Django, Android Studio
 	\item {\bf Environment:} Git, Bash, Debian Linux, Ubuntu, SVN
 	\item {\bf Languages:} Russian (native), English (TOEFL iBT 112/120), French (beginner)
 \end{rSection}
 
 \begin{rSection}{Scholarships}
-\item \faExternalLink~\href{http://phystech-foundation.org/}{Abramov Fund's scholarship} for excellent grades (2014)
-\item \faExternalLink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars} program at EPFL CHILI Lab (2017)
+\item \faExternalLink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars} at EPFL CHILI Lab (2017)
+\item \faExternalLink~\href{http://phystech-foundation.org/}{Abramov Fund's}, for excellent grades (2014)
 \end{rSection}
 
 %\begin{rSection}{Courses}
@@ -97,22 +103,24 @@
 \begin{rSection}{Olympiads and hackathons}
 %\item Google HashCode 2017 (participation)
 \item \faExternalLink~\href{http://web.archive.org/web/20170224094223/http://rl.deephack.me/}{DeepHack.RL} hackathon (Deep RL for Atari games), MIPT, Moscow, Russia, 2017. 4th place. \faExternalLink~\href{https://github.com/sergeivolodin/deephack.rl}{Code}
-\item Sixteen interuniversity programming olympiad, Vologda, 2013\\\hfill {\em \url{http://olympiads.vologda-uni.ru/interuni/}}
+\item \faExternalLink~\href{http://olympiads.vologda-uni.ru/interuni/}{Sixteen interuniversity programming olympiad}, Vologda, 2013
 \item \faExternalLink~\href{https://vk.com/devcup}{DevCup} software development competition, Moscow, Russia, 2013. 2nd place
 \end{rSection}
 
 
+\newpage
+
 \begin{rSection}{Work experience}
 %Gap year Jan 2015 -- Feb 2016
-\begin{rSubsection}{ITBrat}{Jul 2015 -- Feb 2016}{Software Engineer, C++, pthread, OpenOnload}{Moscow, Russia}
+\begin{rSubsection}{ITBrat}{Jul 2015 -- Feb 2016}{Sw. Eng.: C++, pthread, Onload}{Moscow, Russia}
 	\item Developed High Frequency Trading (cross-border arbitrage) application from initial discussion with the team to deployment and supporting
 	\item Added low-level networking to the project using Solarflare OpenOnload library and hardware
 	\item Designed and supported the environment for the algorithm: build stage, version control,\\ performance analysis using network dumps
 \end{rSubsection}
 	
-\begin{rSubsection}{\faExternalLink~\href{http://escapecontrol.ru/index_en.html}{EscapeControl}}{Jul 2015 -- Feb 2016}{Software Engineer, C++ (Atmel AVR, Linux)}{Moscow, Russia}
-	\item Created \faExternalLink~\href{http://habr.ru/p/258585/}{system architecture} for the real-world escape room games. \faExternalLink~\href{http://demo:demo@ec3.pagekite.escapecontrol.ru}{Demo}
-	\item Created a startup selling software \& hardware framework for real-world escape games
+\begin{rSubsection}{\faExternalLink~\href{http://escapecontrol.ru/index_en.html}{EscapeControl}}{Jul 2015 -- Feb 2016}{Sw. Eng.: C++, AVR, Linux}{Moscow, Russia}
+	\item Created a startup selling software \& hardware \faExternalLink~\href{http://demo:demo@ec3.pagekite.escapecontrol.ru}{framework} for real-world escape games
+	\item Created \faExternalLink~\href{http://habr.ru/p/258585/}{system architecture} for the real-world escape room games.
 	\item Managed a team of two web developers
 	\item Ten solutions sold, currently running in different countries
 \end{rSubsection}
@@ -125,19 +133,19 @@
 \end{rSection}
 
 \begin{rSection}{Projects}
-\begin{rSubsection}{\faExternalLink~\href{http://web.archive.org/web/20150626102512/http://technoworks.ru:80/}{TechnoWorks}}{}{Quadcopter stabilization project}{}
+\begin{rSubsection}{\faExternalLink~\href{http://web.archive.org/web/20150626102512/http://technoworks.ru:80/}{TechnoWorks}}{2012 -- 2015}{Quadcopter stabilization project}{}
 \item Developed an algorithm in C++ for stabilization of a quadcopter drones. \faExternalLink~\href{https://github.com/it-workshop/Quadrocopter}{Repository}
 \item Conducted the analysis of launches to improve flying quality
 \item Results were \faExternalLink~\href{http://web.archive.org/web/20141016114551/http://habrahabr.ru/company/technoworks/blog/216437/}{published} in the Habrahabr CS blog
-\item Managed the \faExternalLink~\href{https://vk.com/technoworks}{community page} at social network
+\item Managed the \faExternalLink~\href{https://vk.com/technoworks}{community page} at a social network
 \end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Volunteering}
-	\begin{rSubsection}{\faExternalLink~\href{https://fbk.info/english/about/}{Anti-corruption foundation} (Alexey Navalny)}{}{}{}
-		\item Donator (2015--2017)
-		\item Rally participant (June 2017)
-		\item Agitation volunteer (July 2017)
+	\begin{rSubsection}{\faExternalLink~\href{https://fbk.info/english/about/}{Anti-corruption foundation}}{2015 -- 2017}{Moscow, Russia}{}
+		\item Door-to-door campaign
+		\item Street volunteer
+		\item Rally participant
 	\end{rSubsection}
 \end{rSection}
 
