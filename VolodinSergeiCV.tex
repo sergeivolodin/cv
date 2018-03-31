@@ -2,7 +2,7 @@
 %\documentclass{twocolumn} % Use the custom resume.cls style
 \usepackage{fontawesome,graphicx}
 \usepackage[hidelinks]{hyperref}
-\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry} % Document margins
 
 \newcommand*{\img}[1]{%
 	\raisebox{-.02\baselineskip}{%
@@ -23,14 +23,15 @@
 \begin{document}
 
 \begin{rSection}{Education}
-\begin{rSubsection}{\bf \'Ecole Polytechnique F\'ed\'erale de Lausanne}{\\Sep 2017 -- Jun 2019}{MSc in Computer Science}{Lausanne, Switzerland}
+\begin{rSubsection}{\bf \'Ecole Polytechnique F\'ed\'erale de Lausanne}{\\Sep 2017 --}{MSc in Computer Science}{Lausanne, Switzerland}
 %\item School of Computer and Communication Sciences
-\item Relevant courses: Machine Learning, Set Theory, Functional Programming (Scala), Software Engineering (Android, Scrum).
+\item Relevant courses: Machine Learning, Functional Programming, Software Engineering, Set Theory
+\item GPA: {\bf 5.56}/6.00
 \end{rSubsection}
 
-\begin{rSubsection}{\bf Moscow Institute of Physics and Technology}{Sep 2012 -- Jun 2017}{BSc in Computer Science}{Moscow, Russia}
+\begin{rSubsection}{\bf Moscow Institute of Physics and Technology}{\\Sep 2012 -- Jun 2017}{BSc in Computer Science}{Moscow, Russia}
 %\item Department of Control and Applied Mathematics
-\item Relevant courses: Algorithms and Data Structures, Functional Analysis, Random Processes, Convex Optimization, Machine Learning, NLP, Deep Learning.
+\item Relevant courses: Machine Learning (intro), Algorithms and Data Structures, Convex Optimization, Random Processes, Functional Analysis
 \item GPA: {\bf 4.84}/5.00
 \end{rSubsection}
 \end{rSection}
@@ -39,28 +40,29 @@
 \begin{enumerate}
 \item Artificial Intelligence; Machine Learning
 \item Mathematical Optimization
+\item Robotics
 \end{enumerate}
 \end{rSection}
 
 \begin{rSection}{Research experience}
 	\begin{rSubsection}{EPFL, CHILI lab}{Sep 2017 -- present}{Research Assistant}{Lausanne, Switzerland}
-		\item Created a website collecting a dataset for French BHK test to help dysgraphic children
-		\item Researched into ways of adding Augmented Reality to the Cellulo project
+		\item Created \faExternalLink~\href{https://github.com/chili-epfl/qml-ar}{a library} for seamless augmented reality using OpenCV and Qt
+		\item Designed learning activities involving augmented reality and robots
 	\end{rSubsection}
 	
-	\begin{rSubsection}{Skoltech, Center for Energy Systems}{\\Sep 2016 -- Jul 2017}{Research Intern}{Moscow, Russia}
+	\begin{rSubsection}{Skoltech, Energy Systems}{Sep 2016 -- Jul 2017}{Research Intern}{Moscow, Russia}
 %		\item Worked on the Power Flow Feasibility problem with Prof. Anatoly Dymarsky, Dr. Elena Gryazina, and Prof. Boris T. Polyak
-		\item Designed and implemented \faExternalLink~\href{https://github.com/sergeivolodin/CertificateCutting}{the algorithm} (CAQM) for cutting convex parts of the image of a quadratic map.
-		\item Examined the structure of the set of nonconvexities in Matlab
+		\item Examined in MATLAB the structure of the set of boundary nonconvexities of an image of a quadratic map
+		\item Designed and implemented \faExternalLink~\href{https://github.com/sergeivolodin/CAQM}{the CAQM library} which gives approximate solutions to a few problems involving quadratic maps
 	\end{rSubsection}
 	
-	\begin{rSubsection}{MIPT, Chair of Data Analysis}{\\Feb 2016 -- Jul 2016}{Research project}{Moscow, Russia}
-		\item Compared machine learning algorithms for the ligand-receptor interaction problem
-		\item Implemented PCC (Probabilistic Classifier Chains) algorithm using scikit-learn library
+%	\begin{rSubsection}{MIPT, Chair of Data Analysis}{\\Feb 2016 -- Jul 2016}{Research project}{Moscow, Russia}
+%		\item Compared machine learning algorithms for the ligand-receptor interaction problem
+%		\item Implemented PCC (Probabilistic Classifier Chains) algorithm using scikit-learn library
 %		\item The results were published in ITAS proceedings
-	\end{rSubsection}
+%	\end{rSubsection}
 	
-	\begin{rSubsection}{MIPT, chair of Theoretical Mechanics}{Oct 2012 -- Feb 2013}{Technician}{Moscow, Russia}
+	\begin{rSubsection}{MIPT, Theoretical Mechanics dpt.}{\\Oct 2012 -- Feb 2013}{Technician}{Moscow, Russia}
 %		\item Worked on the paper ``Janibekov's effect and the laws of mechanics'' with A.G. Petrov
 		\item Designed and implemented numerical simulations for Euler's rotation equations
 		\item Checked soundness of the approximation using symbolic computations in Wolfram Mathematica
@@ -77,15 +79,17 @@
 \begin{rSection}{Conferences}
 \item \faExternalLink~\href{http://iitp.ru/en/conferences/itas}{Information Technologies and Systems} (Saint-Petersburg, Repino, 2016){, \em Speaker}
 \item \faExternalLink~\href{https://sites.google.com/site/traditionalschool/about}{School} ``Control, Information, Optimization'' (Saint-Petersburg, Repino, 2016){, \em Poster presenter}
-\item \faExternalLink~\href{http://deepbayes.ru}{DeepBayes} school on Bayesian methods in Deep Learning (Moscow, 2017){, \em Practical sessions participant}
+%\item \faExternalLink~\href{http://deepbayes.ru}{DeepBayes} school on Bayesian methods in Deep Learning (Moscow, 2017){, \em Practical sessions participant}
 \end{rSection}
 
+\newpage
+
 \begin{rSection}{Skills}
-	\item {\bf Scientific programming:} scikit-learn (PCC project), MATLAB (CAQM project), Mathematica (Theoretical mechanics), TensorFlow, Theano (DeepHack), R (course)
-	\item {\bf Programming:} C/C++ (HFT), Python (EscapeControl), AVR C++ (EscapeControl), Qt (Quadcopter), Scala, Java (EPFL), nasm, MS SQL (MIPT)
-	\item {\bf Frameworks:} Qt, Django, Android Studio
-	\item {\bf Environment:} Git, Bash, Debian Linux, Ubuntu
-	\item {\bf Languages:} Russian (native), English (TOEFL iBT 112/120), French (beginner)
+	\item {\bf Scientific programming:} Keras, TensorFlow, Theano, scikit-learn, MATLAB, Mathematica, R
+	\item {\bf Languages:} English (TOEFL iBT 112/120), French (beginner), Russian (native)
+	\item {\bf Programming:} C/C++, Python, AVR C++, Scala, Java, nasm
+	\item {\bf Frameworks:} Qt/QML, Django, Android Studio
+	\item {\bf Environment:} Git, Bash, Debian Linux
 \end{rSection}
 
 \begin{rSection}{Scholarships}
@@ -101,13 +105,13 @@
 \begin{rSection}{Olympiads and hackathons}
 %\item Google HashCode 2017 (participation)
 \item \faExternalLink~\href{http://web.archive.org/web/20170224094223/http://rl.deephack.me/}{DeepHack.RL} hackathon (Deep RL for Atari games), MIPT, Moscow, Russia, 2017. \faExternalLink~\href{https://github.com/sergeivolodin/deephack.rl}{4th place}.
-\item \faExternalLink~\href{http://olympiads.vologda-uni.ru/interuni/}{Sixteenth interuniversity programming olympiad}, Vologda, 2013
-\item \faExternalLink~\href{https://vk.com/devcup}{DevCup} software development competition, Moscow, Russia, 2013. 2nd place
+%\item \faExternalLink~\href{http://olympiads.vologda-uni.ru/interuni/}{Sixteenth interuniversity programming olympiad}, Vologda, 2013
+%\item \faExternalLink~\href{https://vk.com/devcup}{DevCup} software development competition, Moscow, Russia, 2013. 2nd place
 \end{rSection}
 
 \begin{rSection}{Projects}
 	\begin{rSubsection}{\faExternalLink~\href{http://web.archive.org/web/20150626102512/http://technoworks.ru:80/}{TechnoWorks}}{2012 -- 2015}{Quadcopter stabilization project}{}
-		\item Developed an algorithm in C++ for stabilization of a quadcopter drones. \faExternalLink~\href{https://github.com/it-workshop/Quadrocopter}{Repository}
+		\item Developed \faExternalLink~\href{https://github.com/it-workshop/Quadrocopter}{an algorithm} in C++ for stabilization of a quadcopter drone
 		\item Conducted the analysis of launches to improve flying quality
 		\item Results were \faExternalLink~\href{http://web.archive.org/web/20141016114551/http://habrahabr.ru/company/technoworks/blog/216437/}{published} in the Habrahabr CS blog
 		\item Managed the \faExternalLink~\href{https://vk.com/technoworks}{community page} at a social network
@@ -116,18 +120,20 @@
 
 \begin{rSection}{Work experience}
 %Gap year Jan 2015 -- Feb 2016
-\begin{rSubsection}{ITBrat}{Jul 2015 -- Feb 2016}{Sw. Eng.: C++, pthread, Onload}{Moscow, Russia}
-	\item Developed high-frequency trading (cross-border arbitrage) application from initial discussion with the team to deployment and supporting
-	\item Added low-level networking to the project using Solarflare OpenOnload library and hardware
-	\item Designed and supported the environment for the algorithm: build stage, version control,\\ performance analysis using network dumps
-\end{rSubsection}
-	
-\begin{rSubsection}{\faExternalLink~\href{http://escapecontrol.ru/index_en.html}{EscapeControl}}{Jul 2015 -- Feb 2016}{Sw. Eng.: C++, AVR, Linux}{Moscow, Russia}
-	\item Created a startup selling software \& hardware \faExternalLink~\href{http://demo:demo@ec3.pagekite.escapecontrol.ru}{framework} for real-world escape games
+
+\begin{rSubsection}{\faExternalLink~\href{http://escapecontrol.ru/index_en.html}{EscapeControl}}{Jul 2015 -- Feb 2016}{C++, AVR, Linux}{Moscow, Russia}
+	\item Created a startup selling software\&hardware \faExternalLink~\href{http://demo:demo@ec3.pagekite.escapecontrol.ru}{framework} for real-world escape games
 	\item Created \faExternalLink~\href{http://habr.ru/p/258585/}{system architecture} for the real-world escape room games
 	\item Managed a team of two web developers
-	\item Ten solutions sold, currently running in different countries
+	\item More than fifteen solutions sold, currently running in different countries
 \end{rSubsection}
+
+\begin{rSubsection}{ITBrat}{Jul 2015 -- Feb 2016}{C++, pthreads, Onload}{Moscow, Russia}
+	\item Developed high-frequency trading (cross-border arbitrage) application from initial discussion with the team to deployment and supporting
+	\item Added low-level networking to the project using Solarflare OpenOnload library and hardware
+	\item Designed and supported the environment for the algorithm: build stage, version control, performance analysis using network dumps
+\end{rSubsection}
+
 %\begin{rSubsection}{\href{http://phobia.ru}{Claustrophobia}}{July 2014 -- Feb 2015}{Developer}{Moscow, Russia}
 %	\item Created system architecture for the real-world escape room game
 %	\item Implemented the solution using C++ (Atmel AVR, Linux)
