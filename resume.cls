@@ -22,7 +22,7 @@
 
 \LoadClass[8pt,a4paper]{article} % Font size and paper type
 \usepackage{scrextend}
-\changefontsizes{8.5pt}
+\changefontsizes{9pt}
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
