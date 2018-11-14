@@ -1,8 +1,13 @@
 \documentclass{resume} % Use the custom resume.cls style
 %\documentclass{twocolumn} % Use the custom resume.cls style
 \usepackage{fontawesome,graphicx}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=blue,
+}
 
 \newcommand*{\img}[1]{%
 	\raisebox{-.02\baselineskip}{%
@@ -43,7 +48,7 @@
 
 \begin{rSubsection}{\bf Moscow Institute of Physics and Technology}{}{Moscow, Russia}{June 2017}
 %\item Department of Control and Applied Mathematics
-\item Bachelor's degree im Computer Science
+\item Bachelor's degree im Applied Mathematics
 \item GPA: {\bf 4.84}/5
 \end{rSubsection}
 \end{rSection}
@@ -64,19 +69,19 @@
 \begin{rSection}{Research experience}
 
 	\begin{rSubsection}{Swiss Federal Institute of Technology in Lausanne (EPFL), Distributed Computing Laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2018 -- present}
-		\item Working on the Why neurons fail theory to extend it
-		\item Experiments using Keras and Tensorflow to test the theory
+		\item Improved the probabilistic bound on error of a neural network in case of independent neuron failures
+		\item Conducted experiments to test the improved theory using Keras and Tensorflow
 	\end{rSubsection}
 
 	\begin{rSubsection}{EPFL, Computer-Human Interaction in Learning and Instruction laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2017 -- Aug 2018}
-		\item Created \faExternalLink~\href{https://github.com/chili-epfl/qml-ar}{a library} for seamless augmented reality using OpenCV and Qt %GraphicBuffer
-		\item Designed a learning activity involving augmented reality and robots for teaching math, conducted experiments, analyzed data %Vectors, Unity
+		\item Created \faExternalLink~\href{https://github.com/chili-epfl/qml-ar}{a library QML-AR} for seamless augmented reality using OpenCV with competitive performance on Android and small visual negative impact
+		\item Designed an activity for learning math using the library, tested the application in a classroom setting, analyzed the obtained data
 	\end{rSubsection}
 	
 	\begin{rSubsection}{Skolkovo Institute of Science and Technology, Center for Energy Systems}{Research Intern}{Moscow, Russia}{Sep 2016 -- Jul 2017}
 		%		\item Worked on the Power Flow Feasibility problem with Prof. Anatoly Dymarsky, Dr. Elena Gryazina, and Prof. Boris T. Polyak
-		\item Examined in MATLAB and theoretically the structure of the set of boundary non-convexities of an image of a quadratic map
-		\item Designed and implemented \faExternalLink~\href{https://github.com/sergeivolodin/CAQM}{the CAQM library} which gives approximate solutions to a number of problems involving quadratic maps
+		\item Characterized using numerical optimization and theoretically the structure of the set of boundary non-convexities of an image of a quadratic map in case the number of non-convexities is infinite
+		\item Designed and implemented \faExternalLink~\href{https://github.com/sergeivolodin/CAQM}{the Convexity Analysis of Quadratic Maps library} which gives approximate solutions to a number of problems involving quadratic maps
 	\end{rSubsection}
 	
 	%	\begin{rSubsection}{MIPT, Chair of Data Analysis}{\\Feb 2016 -- Jul 2016}{Research project}{Moscow, Russia}
@@ -102,9 +107,8 @@
 
 \begin{rSection}{Scholarships}
 	\vspace{-1em}
-	\item \faExternalLink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars} at EPFL \faExternalLink~\href{http://dcl.epfl.ch}{DCL} Lab (2018)
-	\item \faExternalLink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars} at EPFL \faExternalLink~\href{http://chili.epfl.ch}{CHILI} Lab (2017 -- 2018)
-	\item \faExternalLink~\href{http://phystech-foundation.org/}{Abramov Fund's}, for excellent grades (2014)
+	\item \faExternalLink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars}, a paid Research Assistant position, Swiss Federal Institute of Technology in Lausanne (EPFL), 2017 -- 2019
+	\item \faExternalLink~\href{http://phystech-foundation.org/}{Abramov Fund's} scholarship for excellent grades (2014)
 \end{rSection}
 
 \begin{rSection}{Work experience}
