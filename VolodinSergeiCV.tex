@@ -14,62 +14,83 @@
 	}%
 }
 
-\name{Sergei Volodin}
-\address{Route de la Chocolati\`ere 29 A / 009,}
-\address{1026 \'Echandens, Canton of Vaud, Switzerland}
+%see https://tex.stackexchange.com/questions/11436/automated-age-calculation
+\usepackage{datenumber,fp}
+\newcounter{dateone}%
+\newcounter{datetwo}%
+
+\setmydatenumber{dateone}{1994}{10}{03}%
+\setmydatenumber{datetwo}{\the\year}{\the\month}{\the\day}%
+\FPsub\result{\thedatetwo}{\thedateone}
+\FPdiv\myage{\result}{365.2425}
+
+\name{Sergei VOLODIN}
+\address{Route de la Chocolati\`ere 29 A / 009, \'Echandens, Switzerland}
+\address{Birth date: 3rd October 1994 (\FPtrunc\myage{\myage}{0}\myage\,years), Russian}
 \address{sergei.volodin@epfl.ch \href{http://sergeivolodin.github.io}{\img{./img/www.png}}
 	\href{http://linkedin.com/in/sergeivolodin/}{\img{./img/li.png}} \href{http://github.com/sergeivolodin}{\img{./img/gh.png}} +41 78 732 01 34}
-%\address{Birth date: 3 October 1994}
 \twocolumn
 \begin{document}
 
 \begin{rSection}{Education}
-\begin{rSubsection}{\bf \'Ecole Polytechnique F\'ed\'erale de Lausanne}{\\Sep 2017 --}{MSc in Computer Science,\\Minor in Comput. Neurosciences}{Lausanne, Switzerland}
+\hspace{-1em}
+\begin{rSubsection}{\bf Swiss Federal Institute of Technology in Lausanne (EPFL)}{}{Lausanne, Switzerland}{Sep 2017 -- June 2020}
 %\item School of Computer and Communication Sciences
-\item Relevant courses: Machine Learning, Software Engineering,
-{\small Unsupervised and Reinforcement Learning in Neural Networks, Biological modeling of neural networks, Random graph theory, Functional Programming, Set Theory}
-\item GPA: {\bf 5.61}/6.00
+\item Master's degree in Computer Science
+\item Minor in Computational Neurosciences
+\item GPA: {\bf 5.61}/6
 \end{rSubsection}
 
-\begin{rSubsection}{\bf Moscow Institute of Physics and Technology}{\\Sep 2012 -- Jun 2017}{BSc in Computer Science}{Moscow, Russia}
+\begin{rSubsection}{\bf Moscow Institute of Physics and Technology}{}{Moscow, Russia}{June 2017}
 %\item Department of Control and Applied Mathematics
-\item Relevant courses: Machine Learning (intro), Algorithms and Data Structures, Convex Optimization, Random Processes, Functional Analysis
-\item GPA: {\bf 4.84}/5.00
+\item Bachelor's degree im Computer Science
+\item GPA: {\bf 4.84}/5
 \end{rSubsection}
 \end{rSection}
 
-\begin{rSection}{Research interests}
-\begin{enumerate}
-\item Artificial Intelligence; Machine Learning
-\item Mathematical Optimization
-\item Robotics
-\end{enumerate}
+\begin{rSection}{Skills}
+	\item Team/Project management, research paper writing, data analysis, theory, conducting experiments
+	%\vspace{-1em}
+	\item Relevant courses: Machine Learning, Software Engineering,
+	{\small Unsupervised and Reinforcement Learning in Neural Networks, Biological modeling of neural networks, Random graph theory, Functional Programming, Set Theory}
+	\item Relevant courses: Machine Learning (intro), Algorithms and Data Structures, Convex Optimization, Random Processes, Functional Analysis
+	\item {\bf Scientific programming:} Keras, TensorFlow, Theano, scikit-learn, MATLAB, Mathematica, R
+	\item {\bf Languages:} English (TOEFL iBT 112/120), French (beginner), Russian (native)
+	\item {\bf Programming:} C/C++, Python, AVR C++, Scala, Java, nasm, C\#
+	\item {\bf Frameworks:} Qt/QML, Django, Android Studio, OpenGL/GLSL, Unity 3D
+	\item {\bf Environment:} Git, \LaTeX, Bash, Debian/Ubuntu Linux
 \end{rSection}
 
 \begin{rSection}{Research experience}
-	\begin{rSubsection}{EPFL, CHILI lab}{Sep 2017 -- present}{Research Assistant}{Lausanne, Switzerland}
+
+	\begin{rSubsection}{Swiss Federal Institute of Technology in Lausanne (EPFL), Distributed Computing Laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2018 -- present}
+		\item Working on the Why neurons fail theory to extend it
+		\item Experiments using Keras and Tensorflow to test the theory
+	\end{rSubsection}
+
+	\begin{rSubsection}{EPFL, Computer-Human Interaction in Learning and Instruction laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2017 -- Aug 2018}
 		\item Created \faExternalLink~\href{https://github.com/chili-epfl/qml-ar}{a library} for seamless augmented reality using OpenCV and Qt %GraphicBuffer
 		\item Designed a learning activity involving augmented reality and robots for teaching math, conducted experiments, analyzed data %Vectors, Unity
 	\end{rSubsection}
 	
-	\begin{rSubsection}{Skoltech, Energy Systems}{Sep 2016 -- Jul 2017}{Research Intern}{Moscow, Russia}
-%		\item Worked on the Power Flow Feasibility problem with Prof. Anatoly Dymarsky, Dr. Elena Gryazina, and Prof. Boris T. Polyak
+	\begin{rSubsection}{Skolkovo Institute of Science and Technology, Center for Energy Systems}{Research Intern}{Moscow, Russia}{Sep 2016 -- Jul 2017}
+		%		\item Worked on the Power Flow Feasibility problem with Prof. Anatoly Dymarsky, Dr. Elena Gryazina, and Prof. Boris T. Polyak
 		\item Examined in MATLAB and theoretically the structure of the set of boundary non-convexities of an image of a quadratic map
 		\item Designed and implemented \faExternalLink~\href{https://github.com/sergeivolodin/CAQM}{the CAQM library} which gives approximate solutions to a number of problems involving quadratic maps
 	\end{rSubsection}
 	
-%	\begin{rSubsection}{MIPT, Chair of Data Analysis}{\\Feb 2016 -- Jul 2016}{Research project}{Moscow, Russia}
-%		\item Compared machine learning algorithms for the ligand-receptor interaction problem
-%		\item Implemented PCC (Probabilistic Classifier Chains) algorithm using scikit-learn library
-%		\item The results were published in ITAS proceedings
-%	\end{rSubsection}
+	%	\begin{rSubsection}{MIPT, Chair of Data Analysis}{\\Feb 2016 -- Jul 2016}{Research project}{Moscow, Russia}
+	%		\item Compared machine learning algorithms for the ligand-receptor interaction problem
+	%		\item Implemented PCC (Probabilistic Classifier Chains) algorithm using scikit-learn library
+	%		\item The results were published in ITAS proceedings
+	%	\end{rSubsection}
 	
-	\begin{rSubsection}{MIPT, Theoretical Mech. dpt.}{Oct 2012 -- Feb 2013}{Technician}{Moscow, Russia}
-%		\item Worked on the paper ``Janibekov's effect and the laws of mechanics'' with A.G. Petrov
-		\item Designed and implemented numerical simulations for Euler's rotation equations
-		\item Checked soundness of the approximation using symbolic computations in Wolfram Mathematica
-%		\item The results were published in Doklady Akademii Nauk
-	\end{rSubsection}
+%	\begin{rSubsection}{MIPT, Theoretical Mech. dpt.}{Oct 2012 -- Feb 2013}{Technician}{Moscow, Russia}
+		%		\item Worked on the paper ``Janibekov's effect and the laws of mechanics'' with A.G. Petrov
+%		\item Designed and implemented numerical simulations for Euler's rotation equations
+%		\item Checked soundness of the approximation using symbolic computations in Wolfram Mathematica
+		%		\item The results were published in Doklady Akademii Nauk
+%	\end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Publications}
@@ -79,7 +100,45 @@
 \item Petrov A., {\bf Volodin S.} \faExternalLink~\href{https://link.springer.com/article/10.1134/S1028335813080041}{Janibekov's effect and the laws of mechanics}. Doklady Akademii Nauk, 2013.
 \end{rSection}
 
-\newpage
+\begin{rSection}{Scholarships}
+	\vspace{-1em}
+	\item \faExternalLink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars} at EPFL \faExternalLink~\href{http://dcl.epfl.ch}{DCL} Lab (2018)
+	\item \faExternalLink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars} at EPFL \faExternalLink~\href{http://chili.epfl.ch}{CHILI} Lab (2017 -- 2018)
+	\item \faExternalLink~\href{http://phystech-foundation.org/}{Abramov Fund's}, for excellent grades (2014)
+\end{rSection}
+
+\begin{rSection}{Work experience}
+	%Gap year Jan 2015 -- Feb 2016
+	
+	\begin{rSubsection}{\faExternalLink~\href{http://escapecontrol.ru}{EscapeControl}}{Jul 2015 -- Feb 2016}{C++, AVR, Linux}{Moscow, Russia}
+		\item Created a startup selling software\&hardware \faExternalLink~\href{http://demo:demo@ec3.pagekite.escapecontrol.ru}{framework} for real-world escape games
+		\item Created \faExternalLink~\href{http://habr.ru/p/258585/}{system architecture} for the real-world escape room games ({\em in Russian})
+		\item Managed a team of two web developers
+		\item More than twenty solutions sold, currently running in different countries
+	\end{rSubsection}
+	
+	%\begin{rSubsection}{ITBrat}{Jul 2015 -- Feb 2016}{C++, pthreads, Onload}{Moscow, Russia}
+	%	\item Developed high-frequency trading (cross-border arbitrage) application from initial discussion with the team to deployment and supporting
+	%	\item Added low-level networking to the project using Solarflare OpenOnload library and hardware
+	%	\item Designed and supported the environment for the algorithm: build stage, version control, performance analysis using network dumps
+	%\end{rSubsection}
+	
+	%\begin{rSubsection}{\href{http://phobia.ru}{Claustrophobia}}{July 2014 -- Feb 2015}{Developer}{Moscow, Russia}
+	%	\item Created system architecture for the real-world escape room game
+	%	\item Implemented the solution using C++ (Atmel AVR, Linux)
+	%	\item Results description: \url{habr.ru/p/258585/} (in Russian)
+	%\end{rSubsection}
+	
+\end{rSection}
+
+\begin{rSection}{Projects}
+	\begin{rSubsection}{\faExternalLink~\href{http://web.archive.org/web/20150626102512/http://technoworks.ru:80/}{TechnoWorks}}{2012 -- 2015}{Quadcopter stabilization project}{}
+		\item Developed \faExternalLink~\href{https://github.com/it-workshop/Quadrocopter}{an algorithm} in C++ for stabilization of a quadcopter drone
+		\item Conducted the analysis of launches to improve flying quality
+		\item Results were \faExternalLink~\href{http://web.archive.org/web/20141016114551/http://habrahabr.ru/company/technoworks/blog/216437/}{published} in the Habrahabr CS blog
+		\item Managed the \faExternalLink~\href{https://vk.com/technoworks}{community page} at a social network
+	\end{rSubsection}
+\end{rSection}
 
 \begin{rSection}{Conferences}
 \vspace{-1em}
@@ -87,22 +146,6 @@
 \item \faExternalLink~\href{http://deepbayes.ru}{DeepBayes} school on Bayesian methods in Deep Learning (Moscow, 2017){, \em participant}
 \item \faExternalLink~\href{http://iitp.ru/en/conferences/itas}{Information Technologies and Systems} (Saint-Petersburg, Repino, 2016){, \em speaker}
 %\item \faExternalLink~\href{https://sites.google.com/site/traditionalschool/about}{School} ``Control, Information, Optimization'' (Saint-Petersburg, Repino, 2016){, \em Poster presenter}
-\end{rSection}
-
-\begin{rSection}{Skills}
-	\vspace{-1em}
-	\item {\bf Scientific programming:} Keras, TensorFlow, Theano, scikit-learn, MATLAB, Mathematica, R
-	\item {\bf Languages:} English (TOEFL iBT 112/120), French (beginner), Russian (native)
-	\item {\bf Programming:} C/C++, Python, AVR C++, Scala, Java, nasm, C\#
-	\item {\bf Frameworks:} Qt/QML, Django, Android Studio, OpenGL/GLSL, Unity 3D
-	\item {\bf Environment:} Git, \LaTeX, Bash, Debian/Ubuntu Linux
-\end{rSection}
-
-\begin{rSection}{Scholarships}
-\vspace{-1em}
-\item \faExternalLink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars} at EPFL \faExternalLink~\href{http://dcl.epfl.ch}{DCL} Lab (2018)
-\item \faExternalLink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars} at EPFL \faExternalLink~\href{http://chili.epfl.ch}{CHILI} Lab (2017 -- 2018)
-\item \faExternalLink~\href{http://phystech-foundation.org/}{Abramov Fund's}, for excellent grades (2014)
 \end{rSection}
 
 %\begin{rSection}{Courses}
@@ -115,41 +158,12 @@
 \item \faExternalLink~\href{http://web.archive.org/web/20170224094223/http://rl.deephack.me/}{DeepHack.RL} hackathon (Deep RL for Atari games), MIPT, Moscow, Russia, 2017. \faExternalLink~\href{https://github.com/sergeivolodin/deephack.rl}{4th place}.
 \end{rSection}
 
-\begin{rSection}{Projects}
-	\begin{rSubsection}{\faExternalLink~\href{http://web.archive.org/web/20150626102512/http://technoworks.ru:80/}{TechnoWorks}}{2012 -- 2015}{Quadcopter stabilization project}{}
-		\item Developed \faExternalLink~\href{https://github.com/it-workshop/Quadrocopter}{an algorithm} in C++ for stabilization of a quadcopter drone
-		\item Conducted the analysis of launches to improve flying quality
-		\item Results were \faExternalLink~\href{http://web.archive.org/web/20141016114551/http://habrahabr.ru/company/technoworks/blog/216437/}{published} in the Habrahabr CS blog
-		\item Managed the \faExternalLink~\href{https://vk.com/technoworks}{community page} at a social network
-	\end{rSubsection}
+\begin{rSection}{Research interests}
+	Artificial Intelligence, Machine Learning, Artificial Intelligence Safety, Mathematical Optimization, Robotics
 \end{rSection}
 
-\begin{rSection}{Work experience}
-%Gap year Jan 2015 -- Feb 2016
-
-\begin{rSubsection}{\faExternalLink~\href{http://escapecontrol.ru}{EscapeControl}}{Jul 2015 -- Feb 2016}{C++, AVR, Linux}{Moscow, Russia}
-	\item Created a startup selling software\&hardware \faExternalLink~\href{http://demo:demo@ec3.pagekite.escapecontrol.ru}{framework} for real-world escape games
-	\item Created \faExternalLink~\href{http://habr.ru/p/258585/}{system architecture} for the real-world escape room games ({\em in Russian})
-	\item Managed a team of two web developers
-	\item More than twenty solutions sold, currently running in different countries
-\end{rSubsection}
-
-%\begin{rSubsection}{ITBrat}{Jul 2015 -- Feb 2016}{C++, pthreads, Onload}{Moscow, Russia}
-%	\item Developed high-frequency trading (cross-border arbitrage) application from initial discussion with the team to deployment and supporting
-%	\item Added low-level networking to the project using Solarflare OpenOnload library and hardware
-%	\item Designed and supported the environment for the algorithm: build stage, version control, performance analysis using network dumps
-%\end{rSubsection}
-
-%\begin{rSubsection}{\href{http://phobia.ru}{Claustrophobia}}{July 2014 -- Feb 2015}{Developer}{Moscow, Russia}
-%	\item Created system architecture for the real-world escape room game
-%	\item Implemented the solution using C++ (Atmel AVR, Linux)
-%	\item Results description: \url{habr.ru/p/258585/} (in Russian)
-%\end{rSubsection}
-		
-\end{rSection}
-
-\begin{rSection}{Hobby}
-	Running ($\frac{1}{2}$ marathon 2018), Snowboarding, Swimming
+\begin{rSection}{Interests}
+	Effective Altruism, Running ($\frac{1}{2}$ marathon 2018), Snowboarding, Swimming
 \end{rSection}
 
 \begin{rSection}{Volunteering}
