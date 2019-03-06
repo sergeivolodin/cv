@@ -3,7 +3,7 @@
 \usepackage{fontawesome,graphicx}
 \usepackage{hyperref}
 \usepackage{amsmath}
-\usepackage[left=0.3in,top=0.3in,right=0.3in,bottom=0.3in]{geometry} % Document margins
+\usepackage[left=0.2in,top=0.2in,right=0.2in,bottom=0.2in]{geometry} % Document margins
 \hypersetup{
 	colorlinks=true,
 	urlcolor=[rgb]{0.3, 0.3, 0.3},
@@ -37,65 +37,68 @@
 \twocolumn
 
 \begin{document}
+\definecolor{grayitem}{RGB}{80, 80, 80}
 \definecolor{grayheading}{RGB}{80, 80, 80}
+\definecolor{graypoint}{RGB}{50, 50, 50}
 \definecolor{gray}{RGB}{150, 150, 150}
+\newcommand{\myitem}{\item[\textcolor{grayitem}{$\cdot$}]}
 \begin{rSection}{Education}
 \hspace{-1em}
 \begin{rSubsection}{Swiss Federal Institute of Technology in Lausanne (EPFL)}{}{Lausanne, Switzerland}{Sep 2017 -- 2021}
 %\item School of Computer and Communication Sciences
-\item[\textcolor{gray}{\textbullet}] Master's degree in {\bf Computer Science,} GPA: {\bf 5.68}/6
-\item[\textcolor{gray}{\textbullet}] Minor in Computational Neurosciences
-\item[\textcolor{gray}{\textbullet}] {\bf Research Assistant} position (2017--)
+\myitem Master's degree in {\bf Computer Science,} GPA: {\bf 5.68}/6
+\myitem Minor in Computational {\bf Neurosciences}
+\myitem Research Assistant position (2017--)
 \end{rSubsection}
-
+%\hrule
 \begin{rSubsection}{Moscow Institute of Physics and Technology}{}{Moscow, Russia}{June 2017}
-%\item[\textcolor{gray}{\textbullet}] Department of Control and Applied Mathematics
+%\myitem Department of Control and Applied Mathematics
 \item[] Bachelor's degree in {\bf Applied Mathematics,} GPA: {\bf 4.84}/5
 \end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Skills}
 	\vspace{-1em}
-	\item {\color{grayheading}\bf Relevant courses:} {\bf Machine Learning, Software Engineering,} {\small Unsupervised and Reinforcement Learning, Convex Optimization, Distributed Algorithms, Algorithms, Random graph theory, Functional Programming, Set Theory, Random Processes, Functional Analysis, Biological modeling of neural networks, Complexity theory, Learning theory, Neuroscience: behavior and cognition, Neuroprosthetics, Theory and methods for Reinforcement Learning, Optimization for ML}
+	\item {\color{grayheading}\bf Relevant courses:} {\bf Machine Learning, Software Engineering,} {\small Unsupervised and Reinforcement Learning, Convex Optimization, Distributed Algorithms, Algorithms, Random graph theory, Functional Programming, Set Theory, Random Processes, Functional Analysis, Biological modeling of neural networks, Complexity theory, Learning theory, Neuroscience: behavior and cognition, Neuroprosthetics, Theory and methods for Reinforcement Learning, Optimization for Machine Learning}
 	\item {\color{grayheading}\bf Scientific programming:} {\bf Keras, TensorFlow,} Theano, scikit-learn, Brian 2, MATLAB, Mathematica, R
-	\item {\color{grayheading}\bf Programming languages:} C/C++, Python, AVR C++, Scala, Java, nasm, C\#
-	\item {\color{grayheading}\bf Frameworks:} Qt/QML, Django, Android Studio, OpenGL/GLSL, Unity 3D, Blender
+	\item {\color{grayheading}\bf Programming languages:} Python, C/C++, Java, {\small Scala, nasm, C\#, AVR C++}
+	\item {\color{grayheading}\bf Frameworks:} Qt/QML, Django, {\small Android Studio, OpenGL/GLSL, Unity 3D, Blender}
 	\item {\color{grayheading}\bf Environment:} Git, \LaTeX, Bash, Debian/Ubuntu Linux
 	\item {\color{grayheading}\bf Scientific skills:} {\bf experimental} sections of research papers, working on {\bf theoretical} problems, scientific presentation, data analysis
-	\item {\color{grayheading}\bf Software development:} team and project {\bf management,} agile software development (Scrum), debugging, TCP/IP networking, design patterns, concurrent and distributed systems, AVR microcontrollers, Arduino platform
-	\item {\color{grayheading}\bf Languages:} English ({\bf TOEFL} iBT {\bf 112}/120), French (beginner), Russian (native)
+	\item {\color{grayheading}\bf Software development:} team and project {\bf management,} agile software development (Scrum), debugging, design patterns, concurrent and distributed systems, {\small TCP/IP networking, AVR microcontrollers, Arduino platform}
+	\item {\color{grayheading}\bf Languages:} English: TOEFL iBT {\bf 112}/120, {\small French: A1, Russian: native}
 \end{rSection}
 
 \begin{rSection}{Research experience}
 
-	\begin{rSubsection}{Swiss Federal Institute of Technology in Lausanne (EPFL), Distributed Computing Laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2018 -- present}
-		\item[\textcolor{gray}{\textbullet}] Investigated fault tolerance of a neural network using Taylor approximation
-		\item[\textcolor{gray}{\textbullet}] Conducted experiments to test the theory using Keras including the implementation of custom layers and regularizers
-%		\item[\textcolor{gray}{\textbullet}] Wrote and submitted a paper to ICML: \mylink~\href{https://arxiv.org/abs/1902.01686}{arXiv:1902.01686}
+	\begin{rSubsection}{EPFL, Distributed Computing Laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2018 -- present}
+		\myitem Investigated fault tolerance of a neural network using {\bf Taylor approximation}
+		\myitem Conducted experiments to test the theory using Keras including the {\bf implementation} of custom layers and regularizers
+%		\myitem Wrote and submitted a paper to ICML: \mylink~\href{https://arxiv.org/abs/1902.01686}{arXiv:1902.01686}
 	\end{rSubsection}
 
 	\begin{rSubsection}{EPFL, Computer-Human Interaction in Learning and Instruction laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2017 -- Aug 2018}
-		\item[\textcolor{gray}{\textbullet}] Created \mylink~\href{https://github.com/chili-epfl/qml-ar}{a {\color{black} \bf library} QML-AR} for seamless augmented reality using OpenCV with competitive performance on Android and small visual negative impact
-		\item[\textcolor{gray}{\textbullet}] Designed an activity for kids for learning math using AR, tested the application in a classroom setting, analyzed the obtained data
+		\myitem Created \mylink~\href{https://github.com/chili-epfl/qml-ar}{a {\color{black} \bf library} QML-AR} for seamless {\bf augmented reality} using OpenCV with competitive performance on Android and small visual negative impact
+		\myitem Designed an activity for kids for learning math using AR, tested the application in a classroom setting, analyzed the obtained data
 	\end{rSubsection}
 	
 	\begin{rSubsection}{Skolkovo Institute of Science and Technology, \\Center for Energy Systems}{Research Intern}{Moscow, Russia}{Sep 2016 -- Jul 2017}
-		%		\item[\textcolor{gray}{\textbullet}] Worked on the Power Flow Feasibility problem with Prof. Anatoly Dymarsky, Dr. Elena Gryazina, and Prof. Boris T. Polyak
-		\item[\textcolor{gray}{\textbullet}] Characterized using numerical optimization and theoretically the structure of the set of boundary non-convexities of an image of a quadratic map in case the number of non-convexities is infinite
-		\item[\textcolor{gray}{\textbullet}] Designed and implemented \mylink~\href{https://github.com/sergeivolodin/CAQM}{the Convexity Analysis of Quadratic Maps {\bf \color{black} library}} which gives approximate solutions to a number of problems involving quadratic maps
+		%		\myitem Worked on the Power Flow Feasibility problem with Prof. Anatoly Dymarsky, Dr. Elena Gryazina, and Prof. Boris T. Polyak
+		\myitem Characterized using {\bf numerical optimization} and {\bf theoretically} the structure of the set of boundary non-convexities of an image of a quadratic map in case the number of non-convexities is infinite
+		\myitem Designed and implemented \mylink~\href{https://github.com/sergeivolodin/CAQM}{the Convexity Analysis of Quadratic Maps {\bf \color{black} library}} which gives approximate solutions to a number of problems involving quadratic maps
 	\end{rSubsection}
 	
 	%	\begin{rSubsection}{MIPT, Chair of Data Analysis}{\\Feb 2016 -- Jul 2016}{Research project}{Moscow, Russia}
-	%		\item[\textcolor{gray}{\textbullet}] Compared machine learning algorithms for the ligand-receptor interaction problem
-	%		\item[\textcolor{gray}{\textbullet}] Implemented PCC (Probabilistic Classifier Chains) algorithm using scikit-learn library
-	%		\item[\textcolor{gray}{\textbullet}] The results were published in ITAS proceedings
+	%		\myitem Compared machine learning algorithms for the ligand-receptor interaction problem
+	%		\myitem Implemented PCC (Probabilistic Classifier Chains) algorithm using scikit-learn library
+	%		\myitem The results were published in ITAS proceedings
 	%	\end{rSubsection}
 	
 %	\begin{rSubsection}{MIPT, Theoretical Mech. dpt.}{Oct 2012 -- Feb 2013}{Technician}{Moscow, Russia}
-		%		\item[\textcolor{gray}{\textbullet}] Worked on the paper ``Janibekov's effect and the laws of mechanics'' with A.G. Petrov
-%		\item[\textcolor{gray}{\textbullet}] Designed and implemented numerical simulations for Euler's rotation equations
-%		\item[\textcolor{gray}{\textbullet}] Checked soundness of the approximation using symbolic computations in Wolfram Mathematica
-		%		\item[\textcolor{gray}{\textbullet}] The results were published in Doklady Akademii Nauk
+		%		\myitem Worked on the paper ``Janibekov's effect and the laws of mechanics'' with A.G. Petrov
+%		\myitem Designed and implemented numerical simulations for Euler's rotation equations
+%		\myitem Checked soundness of the approximation using symbolic computations in Wolfram Mathematica
+		%		\myitem The results were published in Doklady Akademii Nauk
 %	\end{rSubsection}
 \end{rSection}
 
@@ -123,40 +126,40 @@
 	%Gap year Jan 2015 -- Feb 2016
 	
 	\begin{rSubsection}{\mylink~\href{http://escape-control.com}{EscapeControl}}{Jul 2015 -- Feb 2016}{Own b2b startup for escape rooms, Moscow, Russia}{}
-		\item[\textcolor{gray}{\textbullet}] {\bf Created a startup} selling software and hardware for real-world escape room games which allows to speed up the construction and reduce maintenance costs
-		\item[\textcolor{gray}{\textbullet}] Responsible for back-end software engineering, servers administration, sales and customer support
-		\item[\textcolor{gray}{\textbullet}] Managed a team of two web developers until a successful launch of the web interface
-		\item[\textcolor{gray}{\textbullet}] Sold more than twenty solutions which are currently running in different countries across the globe and provided remote support
+		\myitem {\bf Created a startup} selling software and hardware for real-world escape room games which allows to speed up the construction and reduce maintenance costs
+		\myitem {\bf Responsible} for back-end software engineering, servers administration, sales and customer support
+		\myitem {\bf Managed} a team of two web developers until a successful launch of the web interface
+		\myitem Sold more than twenty solutions which are currently running in different countries across the globe and provided remote support
 	\end{rSubsection}
 	
 	\begin{rSubsection}{ITBrat}{Jul 2015 -- Feb 2016}{Algorithmic trading startup, Moscow, Russia}{}
-		\item[\textcolor{gray}{\textbullet}] Developed algorithmic trading application from initial discussion with the team to deployment and supporting
-		\item[\textcolor{gray}{\textbullet}] Added low-level user-space networking to the project which allowed to decrease latency and increase profit
-		\item[\textcolor{gray}{\textbullet}] {\bf Responsible} for the performance of the code
-%		\item[\textcolor{gray}{\textbullet}] Designed and supported the environment for the algorithm: build stage, version control, performance analysis using network dumps
+		\myitem {\bf Developed} algorithmic trading application from initial discussion with the team to deployment and supporting
+		\myitem Added low-level user-space networking to the project which allowed to decrease latency and increase profit
+		\myitem {\bf Responsible} for the performance of the code
+%		\myitem Designed and supported the environment for the algorithm: build stage, version control, performance analysis using network dumps
 	\end{rSubsection}
 	
 	%\begin{rSubsection}{\href{http://phobia.ru}{Claustrophobia}}{July 2014 -- Feb 2015}{Developer}{Moscow, Russia}
-	%	\item[\textcolor{gray}{\textbullet}] Created system architecture for the real-world escape room game
-	%	\item[\textcolor{gray}{\textbullet}] Implemented the solution using C++ (Atmel AVR, Linux)
-	%	\item[\textcolor{gray}{\textbullet}] Results description: \url{habr.ru/p/258585/} (in Russian)
+	%	\myitem Created system architecture for the real-world escape room game
+	%	\myitem Implemented the solution using C++ (Atmel AVR, Linux)
+	%	\myitem Results description: \url{habr.ru/p/258585/} (in Russian)
 	%\end{rSubsection}
 	
 \end{rSection}
 
 \begin{rSection}{Projects}
 	\begin{rSubsection}{Quadcopter drone from scratch project}{2012 -- 2014}{}{}
-		\item[\textcolor{gray}{\textbullet}] Developed \mylink~\href{https://github.com/it-workshop/Quadrocopter}{an algorithm} in C++ for stabilization of a quadcopter drone from scratch using AVR microcontrollers, IMU sensors and PID regulators
-		\item[\textcolor{gray}{\textbullet}] Managed the project consisting of 2-5 developers
-		\item[\textcolor{gray}{\textbullet}] Conducted the analysis of launches to improve flying quality
-		\item[\textcolor{gray}{\textbullet}] Results were {\bf published} as a \mylink~\href{http://web.archive.org/web/20141016114551/http://habrahabr.ru/company/technoworks/blog/216437/}{popular science article} {\em (in Russian)}
+		\myitem Developed \mylink~\href{https://github.com/it-workshop/Quadrocopter}{an algorithm} in C++ for stabilization of a quadcopter drone from scratch using AVR microcontrollers, IMU sensors and PID regulators
+		\myitem {\bf Managed} the project consisting of 2-5 developers
+		\myitem Conducted the analysis of launches to improve flying quality
+		\myitem Results were {\bf published} as a \mylink~\href{http://web.archive.org/web/20141016114551/http://habrahabr.ru/company/technoworks/blog/216437/}{popular science article} {\em (in Russian)}
 	\end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Conferences}
 \vspace{-1em}
 %\item \mylink~\href{https://appliedmldays.org}{Applied Machine Learning Days} (Lausanne, Switzerland, 2019){, \em participant of workshops}
-\item \mylink~\href{https://project.inria.fr/paiss/}{P.A.I.S.S.} (AI Summer School) (INRIA Grenoble, 2018){, \em participant of the practical sections given by top experts; \mylink~\href{http://www.europe.naverlabs.com/Blog/Students-at-PAISS}{selected} to receive financial help }
+\item \mylink~\href{https://project.inria.fr/paiss/}{P.A.I.S.S.} (AI Summer School) (INRIA Grenoble, 2018){, \em participant in tutorials given by top experts; \mylink~\href{http://www.europe.naverlabs.com/Blog/Students-at-PAISS}{selected} to receive financial help }
 %\item \mylink~\href{http://deepbayes.ru}{DeepBayes} school on Bayesian methods in Deep Learning (Moscow, 2017){, \em participant of lectures and practical sessions on Bayesian Methods}
 \item \mylink~\href{http://iitp.ru/en/conferences/itas}{Information Technologies and Systems} (Saint-Petersburg, Repino, 2016){, \em {\bf speaker,} poster presenter}
 %\item \mylink~\href{https://sites.google.com/site/traditionalschool/about}{School} ``Control, Information, Optimization'' (Saint-Petersburg, Repino, 2016){, \em Poster presenter}
@@ -179,7 +182,7 @@
 
 \begin{rSection}{Volunteering}
 \begin{rSubsection}{Effective Altruism Lausanne}{2019}{Local \mylink~\href{https://effectivealtruism.org}{EA} community}{Lausanne, Switzerland}
-	\item[]	Introduction workshop speaker, newsletter management and writing, Facebook events announcements, managing open discussions
+	\item[]	Co-founding the group, introduction workshop speaker, newsletter management and writing, Facebook events announcements, managing open discussions
 \end{rSubsection}
 \begin{rSubsection}{Applied Machine Learning Days}{2019}{Machine learning conference}{Lausanne, Switzerland}
 \item[]	Technical help for presenters, badge check
