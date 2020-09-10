@@ -4,6 +4,7 @@
 \usepackage{hyperref}
 \usepackage{todonotes}
 \usepackage{amsmath}
+\usepackage{wasysym}
 
 % Google logo from https://tex.stackexchange.com/questions/292638/writing-google-logo-in-latex/292652
 \usepackage{tikz}
@@ -53,10 +54,10 @@
 \FPdiv\myage{\result}{365.2425}
 \newcommand{\mylink}{{\color{gray}\faExternalLink}}
 \name{Sergei VOLODIN}
-\address{Route de la Chocolati\`ere 29 A / 009, \'Echandens, Switzerland}
+\address{Regensbergstrasse 192, 8050 Zurich, Switzerland}
 \address{Birth date: 3rd October 1994 (\FPtrunc\myage{\myage}{0}\myage\,years), Russian}
 \address{sergei.volodin@epfl.ch \href{http://sergeivolodin.github.io}{\img{./img/www.png}}
-	\href{http://linkedin.com/in/sergeivolodin/}{\img{./img/li.png}} \href{http://github.com/sergeivolodin}{\img{./img/gh.png}} +41 78 732 01 34}
+	\href{http://linkedin.com/in/sergeivolodin/}{\img{./img/li.png}} \href{http://github.com/sergeivolodin}{\img{./img/gh.png}} \phone +41 78 732 01 34 \phone +1 650 426-86-39}
 %\twocolumn
 
 \begin{document}
@@ -69,7 +70,7 @@
 \hspace{-1em}
 \begin{rSubsection}{Swiss Federal Institute of Technology in Lausanne (EPFL)}{}{Lausanne, Switzerland}{Sep 2017 -- 2021}
 %\item School of Computer and Communication Sciences
-\myitem Master's degree in {\bf Computer Science,} GPA: {\bf 5.68}/6
+\myitem Master's degree in {\bf Computer Science,} GPA: {\bf 5.67}/6
 \myitem Minor in Computational {\bf Neurosciences}
 \myitem Research Assistant position (2017--2019)
 \end{rSubsection}
@@ -82,20 +83,28 @@
 
 \begin{rSection}{Skills}
 	\vspace{-1em}
-	\item {\color{grayheading}\bf Relevant courses:} {\bf Machine Learning, Software Engineering,} {\small Unsupervised and Reinforcement Learning, Convex Optimization, Distributed Algorithms, Algorithms, Random graph theory, Functional Programming, Set Theory, Random Processes, Functional Analysis, Biological modeling of neural networks, Complexity theory, Learning theory, Neuroscience: behavior and cognition, Neuroprosthetics, Theory and methods for Reinforcement Learning, Optimization for Machine Learning}
-	\item {\color{grayheading}\bf Scientific programming:} {\bf Keras, TensorFlow,} scikit-learn, PyTorch, Brian 2, MATLAB, Mathematica, R
+	\item {\color{grayheading}\bf Relevant courses:} {\bf Machine Learning, Software Engineering,} {\small Unsupervised and Reinforcement Learning, Convex Optimization, Distributed Algorithms, Algorithms, Random graph theory, Functional Programming, Set Theory, Random Processes, Functional Analysis, Biological modeling of neural networks, Complexity theory, Learning theory, Neuroscience: behavior and cognition, Neuroprosthetics, Theory and methods for Reinforcement Learning, Optimization for Machine Learning, Computer Vision}
+	\item {\color{grayheading}\bf Scientific programming:} {\bf Keras, TensorFlow,} ray/tune/rllib, tf-agents, scikit-learn, PyTorch, Brian 2, MATLAB, Mathematica, R
 	\item {\color{grayheading}\bf Programming languages:} Python, C/C++, Java, {\small Scala, nasm, C\#, AVR C++}
 	\item {\color{grayheading}\bf Frameworks:} Qt/QML, Django, {\small Android Studio, OpenGL/GLSL, Unity 3D, Blender}
 	\item {\color{grayheading}\bf Environment:} Git, \LaTeX, Bash, Debian/Ubuntu Linux
 	\item {\color{grayheading}\bf Scientific skills:} {\bf experimental} sections of research papers, working on {\bf theoretical} problems, scientific presentation, data analysis
-	\item {\color{grayheading}\bf Software development:} {\bf agile} software development (Scrum), debugging, design patterns, concurrent and distributed systems, team and project management, {\small TCP/IP networking, AVR microcontrollers, Arduino platform}
+	\item {\color{grayheading}\bf Software development:} {\bf agile} software development (Scrum), debugging, design patterns, concurrent and distributed systems, {\small TCP/IP networking, AVR microcontrollers, Arduino platform, team and project management in small startups}
 	\item {\color{grayheading}\bf Languages:} English: TOEFL iBT {\bf 113}/120, {\small French: A1, Russian: native}
 \end{rSection}
 
 \begin{rSection}{Research experience}
-	\begin{rSubsection}{{\large\vspace*{-0.7mm}\google}\ Brain}{Software Engineering Intern}{Mountain View, CA, United States}{Nov 2019 -- present}
-		\myitem Working on interpretability of Reinforcement Learning using Causal Modeling
-		\myitem Using TensorFlow to conduct experiments
+	\begin{rSubsection}{Center for Human-Compatible AI (CHAI), Berkeley}{Summer Intern}{Berkeley, CA, United States (remote due to COVID-19, from Zurich, Switzerland)}{June 2020 -- Sep 2020}
+		\myitem Designed \mylink~\href{https://github.com/HumanCompatibleAI/better-adversarial-defenses/} {better {\bf defenses against adversarial policies}}
+		\myitem Ran hyperparameter sweeps on multiple machines with ray and rllib
+		\myitem Converted legacy code using stable baselines and Tensorflow 1.0 to rllib and Tensorflow 2.0
+	\end{rSubsection}
+	
+	
+	\begin{rSubsection}{{\large\vspace*{-0.7mm}\google}\ Brain}{Software Engineering Intern}{Mountain View, CA, United States}{Nov 2019 -- Feb 2020}
+		\myitem Designed \mylink~\href{https://causalrlworkshop.github.io/program/cldm_8.html}{an algorithm} to uncover the {\bf Causal Model} of a {\bf Reinforcement Learning} environment using interventions
+		\myitem Used TensorFlow and tf-agents to conduct the experiments with large hyperparameter sweeps
+		\myitem Results \mylink~\href{https://causalrlworkshop.github.io/pdf/CLDM_8.pdf}{published} as an ICLR CLDM workshop paper
 	\end{rSubsection}
 
 
@@ -131,7 +140,7 @@
 \end{rSection}
 
 \begin{rSection}{Research interests}
-	Artificial Intelligence, Machine Learning, Artificial Intelligence Safety, Mathematical Optimization, Robotics %, Artificial General Intelligence, Consciousness
+	Artificial Intelligence, Machine Learning, Artificial Intelligence Safety, Causal Reasoning, Adversarial policies, Mathematical Optimization, Robotics %, Artificial General Intelligence, Consciousness
 \end{rSection}
 
 \begin{rSection}{Scholarships}
@@ -178,6 +187,18 @@
 \end{rSection}
 
 \begin{rSection}{Projects}
+	\begin{rSubsection}{Safe Proximal Policy Optimization}{2019}{EPFL EE-618 course project, advised by Dr. Kamalaruban Parameswaran and Prof. Volkan Cevher}{}
+		\myitem \mylink~\href{https://www.overleaf.com/read/cvxkswbspgpb}{Added a projection step} to the {\bf Proximal Policy Optimization} algorithm to comply with requirements of {\bf Constrained Markov Decision Processes}
+		\myitem \mylink~\href{https://github.com/sergeivolodin/SafeContinuousStateRL}{Implemented code in Tensorflow} and tested it in simple environments
+		\myitem Presented the project at the RLSS 2019 summer school (Lille, France)
+	\end{rSubsection}
+	
+	\begin{rSubsection}{Learning Interpretable Abstract Representations in Reinforcement Learning via Model Sparsity}{2020}{EPFL semester project, advised by Dr. Johanni Brea and Prof. Wulfram Gerstner}{}
+		\myitem \mylink~\href{https://www.overleaf.com/read/nqgjrjbcybrp}{Designed an algorithm} to learn {\bf Abstract Representations} for {\bf Causal Models} of {\bf Reinforcement Learning} environments via {\bf Model Sparsity Constraint}
+		\myitem \mylink~\href{https://github.com/sergeivolodin/SafeContinuousStateRL}{Implemented the proposed algorithm in Tensorflow} and tested it on a proof-of-concept setting
+		\myitem Presented the project at the MLSS 2020 summer school (remote due to COVID-19)
+	\end{rSubsection}
+	
 	\begin{rSubsection}{Quadcopter drone from scratch project}{2012 -- 2014}{}{}
 		\myitem Developed \mylink~\href{https://github.com/it-workshop/Quadrocopter}{an algorithm} in C++ for stabilization of a quadcopter drone from scratch using AVR microcontrollers, IMU sensors and PID regulators
 		\myitem {\bf Managed} the project consisting of 2-5 developers
@@ -189,6 +210,7 @@
 \begin{rSection}{Conferences and summer schools}
 %\todo[inline]{Choose only the best ones}
 \vspace{-1em}
+\item \mylink~\href{http://mlss.tuebingen.mpg.de/2020/}{Machine Learning Summer School, 2020} (virtual due to COVID-19){, \em {\bf poster} presenter}
 %\item \mylink~\href{https://appliedmldays.org}{Applied Machine Learning Days} (Lausanne, Switzerland, 2019){, \em participant of workshops}
 \item \mylink~\href{https://rlss.inria.fr}{Reinforcement Learning Summer School, 2019} (Lille, France){, \em {\bf poster} presenter, selected to receive {\bf financial help}}
 \item \mylink~\href{https://ds3-datascience-polytechnique.fr}{Data science summer school, 2019} (Paris, France){, \em {\bf poster} presenter}
@@ -218,10 +240,15 @@
 \begin{rSubsection}{Effective Altruism Lausanne}{2019}{Local \mylink~\href{https://effectivealtruism.org}{EA} community}{Lausanne, Switzerland}
 	\item[] Co-founding the group, \mylink~\href{http://eageneva.org/about#our-members}{introduction workshop speaker}, running a \mylink~\href{https://docs.google.com/document/d/1prejPACr08nUVztHRBc4nj4upKtDc9_EJOYi1alWuYM/edit?usp=sharing}{discussion group} on AI safety and theory, newsletter management and writing, Facebook events announcements, managing open discussions
 \end{rSubsection}
+
+\begin{rSubsection}{Artificial Intelligence Governance Forum}{2019,\,2020}{\mylink~\href{https://ai-gf.com/}{AI governance conference}}{Geneva, Switzerland (2019), virtual due to COVID-19 (2020)}
+	\item[] Time-keeping, technical support, small tutorial on neural networks
+\end{rSubsection}
+
 \begin{rSubsection}{Applied Machine Learning Days}{2019}{Machine learning \mylink~\href{https://www.appliedmldays.org/}{conference}}{Lausanne, Switzerland}
 \item[]	Technical help for presenters, badge check
 \end{rSubsection}
-	\begin{rSubsection}{Anti-corruption foundation}{2017}{A \mylink~\href{https://en.wikipedia.org/wiki/Anti-Corruption_Foundation}{non-profit} aimed at investigating corruption}{Moscow, Russia}
+	\begin{rSubsection}{Anti-corruption foundation (A. Navalny)}{2017}{A \mylink~\href{https://en.wikipedia.org/wiki/Anti-Corruption_Foundation}{non-profit} aimed at investigating corruption}{Moscow, Russia}
 \item[] Conveyed the results of the investigations by talking to people on the streets as a volunteer
 	\end{rSubsection}
 \end{rSection}
