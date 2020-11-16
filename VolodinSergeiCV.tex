@@ -77,14 +77,14 @@
 \newcommand{\myitem}{\item[\textcolor{grayitem}{$\cdot$}]}
 \begin{rSection}{Education}
 \hspace{-1em}
-\begin{rSubsection}{Swiss Federal Institute of Technology in Lausanne (EPFL)}{}{Lausanne, Switzerland}{Sep 2017 -- 2021}
+\begin{rSubsection}{\logo{Logo_EPFL.pdf} Swiss Federal Institute of Technology in Lausanne (EPFL)}{}{Lausanne, Switzerland}{Sep 2017 -- 2021}
 %\item School of Computer and Communication Sciences
 \myitem Master's degree in {\bf Computer Science,} GPA: {\bf 5.67}/6
 \myitem Minor in Computational {\bf Neurosciences}
 \myitem Research Assistant position (2017--2019)
 \end{rSubsection}
 %\hrule
-\begin{rSubsection}{Moscow Institute of Physics and Technology}{}{Moscow, Russia}{June 2017}
+\begin{rSubsection}{\logo{mipt.png} Moscow Institute of Physics and Technology}{}{Moscow, Russia}{June 2017}
 %\myitem Department of Control and Applied Mathematics
 \item[] Bachelor's degree in {\bf Applied Mathematics,} GPA: {\bf 4.84}/5
 \end{rSubsection}
@@ -104,9 +104,10 @@
 
 \begin{rSection}{Research experience}
 	\begin{rSubsection}{\logo{chai-logo.png} \logo{UCBerkeley.png} Center for Human-Compatible AI (CHAI), Berkeley}{Summer Intern}{Berkeley, CA, United States (remote due to COVID-19, from Zurich, Switzerland)}{June 2020 -- Sep 2020}
-		\myitem Designed \mylink~\href{https://github.com/HumanCompatibleAI/better-adversarial-defenses/} {better {\bf defenses against adversarial policies}}
+		\myitem Designed \mylink~\href{https://github.com/HumanCompatibleAI/better-adversarial-defenses/} {better {\bf defenses against {\bf adversarial policies}}} in Multi-Agent Reinforcement Learning via alternating training of opponents
 		\myitem Ran hyperparameter sweeps on multiple machines with ray and rllib
 		\myitem Converted legacy code using stable baselines and Tensorflow 1.0 to rllib and Tensorflow 2.0
+		\myitem Publication expected soon at the BAIR blog
 	\end{rSubsection}
 	
 	
@@ -117,8 +118,9 @@
 	\end{rSubsection}
 
 
-	\begin{rSubsection}{\logo{Logo_EPFL.pdf} Distributed Computing Laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2018 -- Oct 2019}
-		\myitem Investigated fault tolerance of a neural network using {\bf Taylor approximation}
+	\begin{rSubsection}{EPFL, Distributed Computing Laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2018 -- Oct 2019}
+		\myitem Investigated {\bf fault tolerance} of a neural network using {\bf Taylor approximation}
+		\myitem Introduced the {\em continuous limit} to bound the error, and compared to the Neural Tangent Kernel limit case
 		\myitem Conducted \mylink~\href{https://github.com/LPD-EPFL/ProbabilisticFaultToleranceNNs}{experiments} to test the theory using Keras including the {\bf implementation} of custom layers and regularizers
 %		\myitem Wrote and submitted a paper to ICML: \mylink~\href{https://arxiv.org/abs/1902.01686}{arXiv:1902.01686}
 	\end{rSubsection}
@@ -148,6 +150,8 @@
 %	\end{rSubsection}
 \end{rSection}
 
+\newpage
+
 \begin{rSection}{Research interests}
 	Artificial Intelligence, Machine Learning, Artificial Intelligence Safety, Causal Reasoning, Adversarial policies, Mathematical Optimization, Robotics %, Artificial General Intelligence, Consciousness
 \end{rSection}
@@ -162,7 +166,7 @@
 
 \begin{rSection}{Publications}
 \vspace{-1em}
-\item {\bf Sergei Volodin,} Nevan Wichers, Jeremy Nixon. \mylink~\href{https://arxiv.org/pdf/2002.05217.pdf}{Resolving Spurious Correlations in Causal Models of Environments via Interventions}, 2020. Topic choice, experiments, theory, writing. \mylink~\href{https://causalrlworkshop.github.io/program/cldm_8.html}{ICLR CLDM workshop 2020}.
+\item \logo{iclr.png} {\bf Sergei Volodin,} Nevan Wichers, Jeremy Nixon. \mylink~\href{https://arxiv.org/pdf/2002.05217.pdf}{Resolving Spurious Correlations in Causal Models of Environments via Interventions}, 2020. Topic choice, experiments, theory, writing. \mylink~\href{https://causalrlworkshop.github.io/program/cldm_8.html}{ICLR CLDM workshop 2020}.
 \item El-M. El-Mhamdi, R. Guerraoui, A. Kucharavy, {\bf \color{grayheading} S. Volodin.} \mylink~\href{https://arxiv.org/abs/1902.01686}{The Probabilistic Fault Tolerance of Neural Networks in the Continuous Limit}, 2019. Experiments, theory,  writing. %Under review of {\bf ICML}
 \item A. Dymarsky, E. Gryazina, B. Polyak, {\bf \color{grayheading} S. Volodin.} \mylink~\href{https://arxiv.org/pdf/1810.00896.pdf}{Geometry of quadratic maps via convex relaxation}, 2018. Exp-s, theory, writing.% Under review of {\bf SIOPT}
 %\item {\bf S. Volodin}, M. Popova, V. Strijov \mylink~\href{http://itas2016.iitp.ru/pdf/1570303389.pdf}{Probabilistic prediction of nuclear receptors’ biological activity}. Proceedings of ITaS, 2016, {\em in Russian}. Implemented the Probabilistic Classifier Chains algorithm using Python and tried it on the dataset
