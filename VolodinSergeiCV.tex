@@ -43,6 +43,15 @@
 	}%
 }
 
+\newcommand*{\logo}[1]{%
+	\raisebox{-.02\baselineskip}{%
+		\includegraphics[
+		height=10pt,
+		keepaspectratio,
+		]{./img/#1}%
+	}%
+}
+
 %see https://tex.stackexchange.com/questions/11436/automated-age-calculation
 \usepackage{datenumber,fp}
 \newcounter{dateone}%
@@ -94,7 +103,7 @@
 \end{rSection}
 
 \begin{rSection}{Research experience}
-	\begin{rSubsection}{Center for Human-Compatible AI (CHAI), Berkeley}{Summer Intern}{Berkeley, CA, United States (remote due to COVID-19, from Zurich, Switzerland)}{June 2020 -- Sep 2020}
+	\begin{rSubsection}{\logo{chai-logo.png} \logo{UCBerkeley.png} Center for Human-Compatible AI (CHAI), Berkeley}{Summer Intern}{Berkeley, CA, United States (remote due to COVID-19, from Zurich, Switzerland)}{June 2020 -- Sep 2020}
 		\myitem Designed \mylink~\href{https://github.com/HumanCompatibleAI/better-adversarial-defenses/} {better {\bf defenses against adversarial policies}}
 		\myitem Ran hyperparameter sweeps on multiple machines with ray and rllib
 		\myitem Converted legacy code using stable baselines and Tensorflow 1.0 to rllib and Tensorflow 2.0
@@ -108,7 +117,7 @@
 	\end{rSubsection}
 
 
-	\begin{rSubsection}{EPFL, Distributed Computing Laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2018 -- Oct 2019}
+	\begin{rSubsection}{\logo{Logo_EPFL.pdf} Distributed Computing Laboratory}{Research Assistant}{Lausanne, Switzerland}{Sep 2018 -- Oct 2019}
 		\myitem Investigated fault tolerance of a neural network using {\bf Taylor approximation}
 		\myitem Conducted \mylink~\href{https://github.com/LPD-EPFL/ProbabilisticFaultToleranceNNs}{experiments} to test the theory using Keras including the {\bf implementation} of custom layers and regularizers
 %		\myitem Wrote and submitted a paper to ICML: \mylink~\href{https://arxiv.org/abs/1902.01686}{arXiv:1902.01686}

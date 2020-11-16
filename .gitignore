@@ -1,4 +1,5 @@
 *.bbl
+*.Identifier
 *.blg
 *.aux
 *.log
