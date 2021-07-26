@@ -51,6 +51,7 @@
 		\includegraphics[
 		height=10pt,
 		keepaspectratio,
+		interpolate
 		]{./img/#1}%
 	}%
 }
@@ -89,7 +90,7 @@
 \myitem Master's degree in {\bf Computer Science,} GPA: {\bf 5.67}/6
 \myitem Minor in Computational {\bf Neurosciences}
 \myitem Research Assistant position (2017--2019)
-\myitem Thesis \mylink~\href{https://github.com/sergeivolodin/ms-thesis/releases/download/v1.0/thesis_volodin.pdf}{"CauseOccam: Learning Interpretable Abstract Representations in
+\myitem Thesis \mylink~\href{https://sergia-ch.github.io/causality-simplicity/CauseOccam_Learning_Interpretable_Abstract_Representations_in_Reinforcement_Learning_Environments_via_Model_Sparsity.pdf}{"CauseOccam: Learning Interpretable Abstract Representations in
 Reinforcement Learning Environments via Model Sparsity"}
 \end{rSubsection}
 %\hrule
@@ -108,41 +109,49 @@ Reinforcement Learning Environments via Model Sparsity"}
 	\item {\color{grayheading}\bf Environment:} Git, \LaTeX, Bash, Debian/Ubuntu Linux
 	\item {\color{grayheading}\bf Scientific skills:} {\bf experimental} sections of research papers, working on {\bf theoretical} problems, scientific presentation, data analysis
 	\item {\color{grayheading}\bf Software development:} {\bf agile} software development (Scrum), debugging, design patterns, concurrent and distributed systems, {\small TCP/IP networking, AVR microcontrollers, Arduino platform, team and project management in small startups}
-	\item {\color{grayheading}\bf Languages:} \emoji{flag-us} English: TOEFL iBT {\bf 113}/120, {\small \emoji{flag-fr} French: A1, \emoji{flag-ru} Russian: native}
+	\item {\color{grayheading}\bf Languages:} \emoji{flag-us} English: \mylink~\href{https://sergia-ch.github.io/epfl/TOEFL.pdf}{TOEFL iBT {\bf 113}/120}, {\small \emoji{flag-fr} French: A1, \emoji{flag-ru} Russian: native}
 \end{rSection}
 
-\begin{rSection}{Research experience}
+\begin{rSection}{Research experience}			  
+	\begin{rSubsection}{EPFL, Laboratory for Computational Neuroscience \emoji{flag-ch}}{Master's Thesis student}{Lausanne, Switzerland}{Oct 2020 -- Apr 2021}
+		\myitem Designed \mylink~\href{https://github.com/sergia-ch/causality-disentanglement-rl}{an algorithm} with {\bf Python 3, Pytorch and ray} based on the "Consciousness Prior" proposal that finds a simple causal model of an RL environment in the general case. The project is a continuation of my Google Research internship (see below)
+		\myitem The algorithm works on benchmarks, see my thesis \mylink~"\href{https://sergia-ch.github.io/causality-simplicity/CauseOccam_Learning_Interpretable_Abstract_Representations_in_Reinforcement_Learning_Environments_via_Model_Sparsity.pdf}{CauseOccam: Learning Interpretable Abstract Representations in
+			Reinforcement Learning Environments via Model Sparsity}"
+		\myitem The work includes theoretical results on abstraction learning as well as a code base with tests and documentation
+		\myitem The thesis defended on the 21st of April 2021 with Adam Gleave (Berkeley/DeepMind) as an external expert
+	\end{rSubsection}
+	
 	\begin{rSubsection}{\logo{chai-logo.png} \logo{UCBerkeley.png} Center for Human-Compatible AI (CHAI), Berkeley \emoji{flag-us}}{Summer Intern}{Berkeley, CA, United States (remote due to COVID-19, from Zurich, Switzerland \emoji{flag-ch})}{June 2020 -- Sep 2020}
-		\myitem Designed \mylink~\href{https://github.com/HumanCompatibleAI/better-adversarial-defenses/} {better {\bf defenses against {\bf adversarial policies}}} in Multi-Agent Reinforcement Learning via alternating training of opponents
+		\myitem Designed \mylink~\href{https://github.com/HumanCompatibleAI/better-adversarial-defenses/} {better {\bf defenses against {\bf adversarial policies}}} in Multi-Agent Reinforcement Learning via alternating training of opponents using {\bf Python 3, Tensorflow, ray, rllib}.
 		\myitem Ran hyperparameter sweeps on multiple machines with ray and rllib
 		\myitem Converted legacy code using stable baselines and Tensorflow 1.0 to rllib and Tensorflow 2.0
-		\myitem Publication expected soon at the BAIR blog
+		\myitem Results published as a blog post \mylink~"\href{https://forum.effectivealtruism.org/posts/YscrJFofd6S8eJGS8/defending-against-adversarial-policies-in-reinforcement}{Defending against Adversarial Policies in Reinforcement Learning with Alternating Training}" on the Effective Altruism forum
 	\end{rSubsection}
 
 
 	\begin{rSubsection}{{\large\vspace*{-0.7mm}\google}\ Research \emoji{flag-us}}{Software Engineering Intern}{Mountain View, CA, United States}{Nov 2019 -- Feb 2020}
-		\myitem Designed \mylink~\href{https://causalrlworkshop.github.io/program/cldm_8.html}{an algorithm} to uncover the {\bf Causal Model} of a {\bf Reinforcement Learning} environment using interventions
+		\myitem Designed an algorithm to uncover a linear {\bf Causal Model} of a {\bf Reinforcement Learning} environment using interventions with {\bf Python 3, Tensorflow, tf-agents}, and analyzed the effect of interventions on the quality of exploration
 		\myitem Used TensorFlow and tf-agents to conduct the experiments with large hyperparameter sweeps
-		\myitem Results \mylink~\href{https://causalrlworkshop.github.io/pdf/CLDM_8.pdf}{published} as an ICLR CLDM workshop paper
+		\myitem Results \mylink~\href{https://arxiv.org/abs/2002.05217}{published} as an ICLR CLDM workshop paper
 	\end{rSubsection}
 
 
 	\begin{rSubsection}{EPFL, Distributed Computing Laboratory \emoji{flag-ch}}{Research Assistant}{Lausanne, Switzerland}{Sep 2018 -- Oct 2019}
 		\myitem Investigated {\bf fault tolerance} of a neural network using {\bf Taylor approximation}
-		\myitem Introduced the {\em continuous limit} to bound the error, and compared to the Neural Tangent Kernel limit case
-		\myitem Conducted \mylink~\href{https://github.com/LPD-EPFL/ProbabilisticFaultToleranceNNs}{experiments} to test the theory using Keras including the {\bf implementation} of custom layers and regularizers
+		\myitem Introduced the {\em continuous limit} to \mylink~\href{https://arxiv.org/abs/1902.01686}{bound the error}, and compared to the Neural Tangent Kernel limit case
+		\myitem Conducted \mylink~\href{https://github.com/LPD-EPFL/ProbabilisticFaultToleranceNNs}{experiments} to test the theory using {\bf Keras} including the {\bf implementation} of custom layers and regularizers
 %		\myitem Wrote and submitted a paper to ICML: \mylink~\href{https://arxiv.org/abs/1902.01686}{arXiv:1902.01686}
 	\end{rSubsection}
 
 	\begin{rSubsection}{EPFL, Computer-Human Interaction in Learning and Instruction laboratory \emoji{flag-ch}}{Research Assistant}{Lausanne, Switzerland}{Sep 2017 -- Aug 2018}
-		\myitem Created \mylink~\href{https://github.com/chili-epfl/qml-ar}{a {\color{black} \bf library} QML-AR} for seamless {\bf augmented reality} using OpenCV with competitive performance on Android and small visual negative impact
+		\myitem Created \mylink~\href{https://github.com/chili-epfl/qml-ar}{a {\color{black} \bf library} QML-AR} for seamless {\bf augmented reality} using {\bf OpenCV, Qt/C++ and Qt/QML} with competitive performance on Android and small visual negative impact
 		\myitem Designed an \mylink~\href{https://youtu.be/B4-2qYsAKH4}{activity for kids} for learning math using AR, tested the application in a classroom setting, analyzed the obtained data
 	\end{rSubsection}
 
 	\begin{rSubsection}{Skolkovo Institute of Science and Technology, \\Center for Energy Systems \emoji{flag-ru}}{Research Intern}{Moscow, Russia}{Sep 2016 -- Jul 2017}
 		%		\myitem Worked on the Power Flow Feasibility problem with Prof. Anatoly Dymarsky, Dr. Elena Gryazina, and Prof. Boris T. Polyak
 		\myitem Characterized using {\bf numerical optimization} and {\bf theoretically} the structure of the set of boundary non-convexities of an image of a quadratic map in case the number of non-convexities is infinite
-		\myitem Designed and implemented \mylink~\href{https://github.com/sergeivolodin/CAQM}{the Convexity Analysis of Quadratic Maps {\bf \color{black} library}} which gives approximate solutions to a number of problems involving quadratic maps
+		\myitem Designed and implemented \mylink~\href{https://github.com/sergeivolodin/CAQM}{the Convexity Analysis of Quadratic Maps {\bf \color{black} library}} using {\bf MATLAB} which gives approximate solutions to a number of problems involving quadratic maps
 	\end{rSubsection}
 
 	%	\begin{rSubsection}{MIPT, Chair of Data Analysis}{\\Feb 2016 -- Jul 2016}{Research project}{Moscow, Russia}
@@ -161,23 +170,14 @@ Reinforcement Learning Environments via Model Sparsity"}
 
 %\newpage
 
-\begin{rSection}{Research interests}
-	Artificial Intelligence, Machine Learning, Artificial Intelligence Safety, Causal Reasoning, Adversarial policies, Mathematical Optimization, Robotics %, Artificial General Intelligence, Consciousness
-\end{rSection}
-
-\begin{rSection}{Scholarships}
-	\vspace{-1em}
-	\item \mylink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars}, a paid {\bf Research Assistant} position, Swiss Federal Institute of Technology in Lausanne (EPFL), 2017 -- 2019
-	\item \mylink~\href{http://phystech-foundation.org/}{Abramov Fund's} scholarship for excellent {\bf grades,} 2014
-\end{rSection}
-
 %\newpage
 
 \begin{rSection}{Publications}
 \vspace{-1em}
-\item \logo{iclr.png} {\bf Sergei Volodin,} Nevan Wichers, Jeremy Nixon. \mylink~\href{https://arxiv.org/pdf/2002.05217.pdf}{Resolving Spurious Correlations in Causal Models of Environments via Interventions}, 2020. Topic choice, experiments, theory, writing. \mylink~\href{https://causalrlworkshop.github.io/program/cldm_8.html}{ICLR CLDM workshop 2020}.
+\item L\^{e}-Nguy\^{e}n Hoang, Louis Faucon, Aidan Jungo, {\bf Sergei Volodin,} Dalia Papuc, Orfeas Liossatos, Ben Crulis, Mariame Tighanimine, Isabela Constantin, Anastasiia Kucherenko, Alexandre Maurer, Felix Grimberg, Vlad Nitu, Chris Vossen, Sébastien Rouault, El-Mahdi El-Mhamdi. \mylink~\href{https://arxiv.org/abs/2107.07334}{Tournesol: A quest for a large, secure and trustworthy database of reliable human judgments}, 2021. Code for the platform (backend, ML, frontend), experiments, part of data analysis, writing
+\item \logo{iclr.png} {\bf Sergei Volodin,} Nevan Wichers, Jeremy Nixon. \mylink~\href{https://arxiv.org/abs/2002.05217}{Resolving Spurious Correlations in Causal Models of Environments via Interventions}, 2020. Topic choice, experiments, theory, writing. \mylink~\href{https://causalrlworkshop.github.io/program/cldm_8.html}{ICLR CLDM workshop 2020}.
 \item El-M. El-Mhamdi, R. Guerraoui, A. Kucharavy, {\bf \color{grayheading} S. Volodin.} \mylink~\href{https://arxiv.org/abs/1902.01686}{The Probabilistic Fault Tolerance of Neural Networks in the Continuous Limit}, 2019. Experiments, theory,  writing. %Under review of {\bf ICML}
-\item A. Dymarsky, E. Gryazina, B. Polyak, {\bf \color{grayheading} S. Volodin.} \mylink~\href{https://arxiv.org/pdf/1810.00896.pdf}{Geometry of quadratic maps via convex relaxation}, 2018. Exp-s, theory, writing.% Under review of {\bf SIOPT}
+\item A. Dymarsky, E. Gryazina, B. Polyak, {\bf \color{grayheading} S. Volodin.} \mylink~\href{https://arxiv.org/abs/1810.00896}{Geometry of quadratic maps via convex relaxation}, 2018. Exp-s, theory, writing.% Under review of {\bf SIOPT}
 %\item {\bf S. Volodin}, M. Popova, V. Strijov \mylink~\href{http://itas2016.iitp.ru/pdf/1570303389.pdf}{Probabilistic prediction of nuclear receptors’ biological activity}. Proceedings of ITaS, 2016, {\em in Russian}. Implemented the Probabilistic Classifier Chains algorithm using Python and tried it on the dataset
 %\todo[inline]{Publish FT on arXiv and update my CV}
 \item A. Petrov, {\bf \color{grayheading} S. Volodin} \mylink~\href{https://link.springer.com/article/10.1134/S1028335813080041}{Janibekov's effect and the laws of mechanics}. Doklady Akademii Nauk, 2013. Graphics for the article, experiments, {\bf first year} of my BSc
@@ -188,19 +188,20 @@ Reinforcement Learning Environments via Model Sparsity"}
 
 	\begin{rSubsection}{\mylink~\href{http://tournesol.app}{Tournesol \emoji{sunflower}}}{May 2020 -- present}{Startup designing better recommender systems, Lausanne, Switzerland \emoji{flag-ch}}{}
 		\myitem {\bf Co-founded a startup} working on expert-driven recommender systems
-		\myitem {\bf Responsible} for \mylink~\href{https://github.com/tournesol-app/tournesol}{back-end Machine Learning engineering, the API server}
-		\myitem {\bf Responsible} as well for system administration, (partially) front-end development
+		\myitem {\bf Responsible} for \mylink~\href{https://github.com/tournesol-app/tournesol}{back-end engineering using {\bf Django}, and Machine Learning engineering with {\bf TensorFlow}, the API server}
+		\myitem {\bf Responsible} as well for system administration (Debian), (partially) front-end development with {\bf React.js}
+		\myitem {\bf Co-authored} \mylink~\href{https://arxiv.org/abs/2107.07334}{the  paper} with our results
 	\end{rSubsection}
 
 	\begin{rSubsection}{\mylink~\href{http://escape-control.com}{EscapeControl \emoji{old-key}}}{Jul 2015 -- Feb 2016}{Own b2b startup for escape rooms, Moscow, Russia \emoji{flag-ru}}{}
 		\myitem {\bf Created a startup} selling software and hardware for \mylink~\href{https://www.youtube.com/watch?v=kXbubjs7aTA}{real-world escape room games} which allows to speed up the construction and reduce maintenance costs
-		\myitem {\bf Responsible} for back-end software engineering, servers administration, sales and customer support
+		\myitem {\bf Responsible} for back-end software engineering ({\bf C++/Python}), servers administration, sales and customer support
 		\myitem {\bf Managed} a team of two web developers until a successful launch of the web interface
 		\myitem Sold more than forty solutions which are currently running in different countries across the globe and provided remote support
 	\end{rSubsection}
 
 	\begin{rSubsection}{ITBrat \emoji{stocks}}{Jul 2015 -- Feb 2016}{Algorithmic trading startup, Moscow, Russia \emoji{flag-ru}}{}
-		\myitem {\bf Developed} algorithmic trading application from initial discussion with the team to deployment and supporting
+		\myitem {\bf Developed} algorithmic trading application from initial discussion with the team to deployment and supporting in {\bf C++}
 		\myitem Added low-level user-space networking to the project which allowed to decrease latency and increase profit
 		\myitem {\bf Responsible} for the performance of the code
 %		\myitem Designed and supported the environment for the algorithm: build stage, version control, performance analysis using network dumps
@@ -214,13 +215,23 @@ Reinforcement Learning Environments via Model Sparsity"}
 
 \end{rSection}
 
+\begin{rSection}{Research interests}
+	Artificial Intelligence, Machine Learning, Artificial Intelligence Safety/Ethics, Causal Reasoning, Adversarial policies, Mathematical Optimization, Robotics, Consciousness research %, Artificial General Intelligence, Consciousness
+\end{rSection}
+
+\begin{rSection}{Scholarships}
+	\vspace{-1em}
+	\item \mylink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars}, a paid {\bf Research Assistant} position, Swiss Federal Institute of Technology in Lausanne (EPFL), 2017 -- 2019
+	\item \mylink~\href{http://phystech-foundation.org/}{Abramov Fund's} scholarship for excellent {\bf grades,} 2014
+\end{rSection}
+
 \begin{rSection}{Projects}
-		\begin{rSubsection}{Learning Interpretable Abstract Representations in Reinforcement Learning via Model Sparsity}{2020}{EPFL semester/thesis project, advised by Dr. Johanni Brea and Prof. Wulfram Gerstner \emoji{flag-ch}}{}
-		\myitem \mylink~\href{https://www.overleaf.com/read/nqgjrjbcybrp}{Designed an algorithm} to learn {\bf Abstract Representations} for {\bf Causal Models} of {\bf Reinforcement Learning} environments via {\bf Model Sparsity Constraint}
-		\myitem \mylink~\href{https://github.com/sergeivolodin/causality-disentanglement-rl}{Implemented the proposed algorithm in Tensorflow/pytorch} and tested it on a proof-of-concept setting
-		\myitem \mylink~\href{https://www.youtube.com/watch?v=4cO4XU15isQ}{Presented the project} at the MLSS 2020 summer school (remote due to COVID-19)
-        \myitem \mylink~\href{https://github.com/sergeivolodin/ms-thesis/releases/download/v1.0/thesis_volodin.pdf}{Extended} the framework to non-linear environments and grid worlds
-	\end{rSubsection}
+%		\begin{rSubsection}{Learning Interpretable Abstract Representations in Reinforcement Learning via Model Sparsity}{2020}{EPFL semester/thesis project, advised by Dr. Johanni Brea and Prof. Wulfram Gerstner \emoji{flag-ch}}{}
+%		\myitem \mylink~\href{https://www.overleaf.com/read/nqgjrjbcybrp}{Designed an algorithm} to learn {\bf Abstract Representations} for {\bf Causal Models} of {\bf Reinforcement Learning} environments via {\bf Model Sparsity Constraint}
+%		\myitem \mylink~\href{https://github.com/sergeivolodin/causality-disentanglement-rl}{Implemented the proposed algorithm in Tensorflow/pytorch} and tested it on a proof-of-concept setting
+%		\myitem \mylink~\href{https://www.youtube.com/watch?v=4cO4XU15isQ}{Presented the project} at the MLSS 2020 summer school (remote due to COVID-19)
+%        \myitem \mylink~\href{https://github.com/sergeivolodin/ms-thesis/releases/download/v1.0/thesis_volodin.pdf}{Extended} the framework to non-linear environments and grid worlds
+%	\end{rSubsection}
 
 	\begin{rSubsection}{Safe Proximal Policy Optimization}{2019}{EPFL EE-618 course project, advised by Dr. Kamalaruban Parameswaran and Prof. Volkan Cevher \emoji{flag-ch}}{}
 		\myitem \mylink~\href{https://www.overleaf.com/read/cvxkswbspgpb}{Added a projection step} to the {\bf Proximal Policy Optimization} algorithm to comply with requirements of {\bf Constrained Markov Decision Processes}
