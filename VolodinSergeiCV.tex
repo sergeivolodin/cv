@@ -78,10 +78,14 @@
 \begin{document}
 	
 \definecolor{grayitem}{RGB}{80, 80, 80}
-\definecolor{grayheading}{RGB}{80, 80, 80}
+\definecolor{pinkitem}{RGB}{255, 0, 255}
+\definecolor{headingcolor}{RGB}{115, 0, 255}
 \definecolor{graypoint}{RGB}{50, 50, 50}
 \definecolor{gray}{RGB}{150, 150, 150}
-\newcommand{\myitem}{\item[\textcolor{grayitem}{$\cdot$}]}
+\definecolor{hrulecolor}{RGB}{25, 0, 255}
+\newcommand{\myitem}{\item[\textcolor{pinkitem}{\Huge\raisebox{-2pt}{$\cdot$}}]}
+
+{\color{pinkitem} Description}
 
 \begin{rSection}{Education}
 \hspace{-1em}
@@ -102,14 +106,14 @@ Reinforcement Learning Environments via Model Sparsity"}
 
 \begin{rSection}{Skills}
 	\vspace{-1em}
-	\item {\color{grayheading}\bf Relevant courses:} {\bf Machine Learning, Software Engineering,} {\small Unsupervised and Reinforcement Learning, Convex Optimization, Distributed Algorithms, Algorithms, Random graph theory, Functional Programming, Set Theory, Random Processes, Functional Analysis, Biological modeling of neural networks, Complexity theory, Learning theory, Neuroscience: behavior and cognition, Neuroprosthetics, Theory and methods for Reinforcement Learning, Optimization for Machine Learning, Computer Vision}
-	\item {\color{grayheading}\bf Scientific programming:} {\bf Keras, TensorFlow,} ray/tune/rllib, tf-agents, scikit-learn, PyTorch, Brian 2, MATLAB, Mathematica, R
-	\item {\color{grayheading}\bf Programming languages:} Python, C/C++, Java, {\small Scala, nasm, C\#, AVR C++}
-	\item {\color{grayheading}\bf Frameworks:} Qt/QML, Django, {\small Android Studio, OpenGL/GLSL, Unity 3D, Blender}
-	\item {\color{grayheading}\bf Environment:} Git, \LaTeX, Bash, Debian/Ubuntu Linux
-	\item {\color{grayheading}\bf Scientific skills:} {\bf experimental} sections of research papers, working on {\bf theoretical} problems, scientific presentation, data analysis
-	\item {\color{grayheading}\bf Software development:} {\bf agile} software development (Scrum), debugging, design patterns, concurrent and distributed systems, {\small TCP/IP networking, AVR microcontrollers, Arduino platform, team and project management in small startups}
-	\item {\color{grayheading}\bf Languages:} \emoji{flag-us} English: \mylink~\href{https://sergia-ch.github.io/epfl/TOEFL.pdf}{TOEFL iBT {\bf 113}/120}, {\small \emoji{flag-fr} French: A1, \emoji{flag-ru} Russian: native}
+	\item {\color{gray}\bf Relevant courses:} {\bf Machine Learning, Software Engineering,} {\small Unsupervised and Reinforcement Learning, Convex Optimization, Distributed Algorithms, Algorithms, Random graph theory, Functional Programming, Set Theory, Random Processes, Functional Analysis, Biological modeling of neural networks, Complexity theory, Learning theory, Neuroscience: behavior and cognition, Neuroprosthetics, Theory and methods for Reinforcement Learning, Optimization for Machine Learning, Computer Vision}
+	\item {\color{gray}\bf Scientific programming:} {\bf Keras, TensorFlow,} ray/tune/rllib, tf-agents, scikit-learn, PyTorch, Brian 2, MATLAB, Mathematica, R
+	\item {\color{gray}\bf Programming languages:} Python, C/C++, Java, {\small Scala, nasm, C\#, AVR C++}
+	\item {\color{gray}\bf Frameworks:} Qt/QML, Django, {\small Android Studio, OpenGL/GLSL, Unity 3D, Blender}
+	\item {\color{gray}\bf Environment:} Git, \LaTeX, Bash, Debian/Ubuntu Linux
+	\item {\color{gray}\bf Scientific skills:} {\bf experimental} sections of research papers, working on {\bf theoretical} problems, scientific presentation, data analysis
+	\item {\color{gray}\bf Software development:} {\bf agile} software development (Scrum), debugging, design patterns, concurrent and distributed systems, {\small TCP/IP networking, AVR microcontrollers, Arduino platform, team and project management in small startups}
+	\item {\color{gray}\bf Languages:} \emoji{flag-us} English: \mylink~\href{https://sergia-ch.github.io/epfl/TOEFL.pdf}{TOEFL iBT {\bf 113}/120}, {\small \emoji{flag-fr} French: A1, \emoji{flag-ru} Russian: native}
 \end{rSection}
 
 \begin{rSection}{Research experience}			  
@@ -176,11 +180,11 @@ Reinforcement Learning Environments via Model Sparsity"}
 \vspace{-1em}
 \item L\^{e}-Nguy\^{e}n Hoang, Louis Faucon, Aidan Jungo, {\bf Sergei Volodin,} Dalia Papuc, Orfeas Liossatos, Ben Crulis, Mariame Tighanimine, Isabela Constantin, Anastasiia Kucherenko, Alexandre Maurer, Felix Grimberg, Vlad Nitu, Chris Vossen, Sébastien Rouault, El-Mahdi El-Mhamdi. \mylink~\href{https://arxiv.org/abs/2107.07334}{Tournesol: A quest for a large, secure and trustworthy database of reliable human judgments}, 2021. Code for the platform (backend, ML, frontend), experiments, part of data analysis, writing
 \item \logo{iclr.png} {\bf Sergei Volodin,} Nevan Wichers, Jeremy Nixon. \mylink~\href{https://arxiv.org/abs/2002.05217}{Resolving Spurious Correlations in Causal Models of Environments via Interventions}, 2020. Topic choice, experiments, theory, writing. \mylink~\href{https://causalrlworkshop.github.io/program/cldm_8.html}{ICLR CLDM workshop 2020}.
-\item El-M. El-Mhamdi, R. Guerraoui, A. Kucharavy, {\bf \color{grayheading} S. Volodin.} \mylink~\href{https://arxiv.org/abs/1902.01686}{The Probabilistic Fault Tolerance of Neural Networks in the Continuous Limit}, 2019. Experiments, theory,  writing. %Under review of {\bf ICML}
-\item A. Dymarsky, E. Gryazina, B. Polyak, {\bf \color{grayheading} S. Volodin.} \mylink~\href{https://arxiv.org/abs/1810.00896}{Geometry of quadratic maps via convex relaxation}, 2018. Exp-s, theory, writing.% Under review of {\bf SIOPT}
+\item El-M. El-Mhamdi, R. Guerraoui, A. Kucharavy, {\bf \color{gray} S. Volodin.} \mylink~\href{https://arxiv.org/abs/1902.01686}{The Probabilistic Fault Tolerance of Neural Networks in the Continuous Limit}, 2019. Experiments, theory,  writing. %Under review of {\bf ICML}
+\item A. Dymarsky, E. Gryazina, B. Polyak, {\bf \color{gray} S. Volodin.} \mylink~\href{https://arxiv.org/abs/1810.00896}{Geometry of quadratic maps via convex relaxation}, 2018. Exp-s, theory, writing.% Under review of {\bf SIOPT}
 %\item {\bf S. Volodin}, M. Popova, V. Strijov \mylink~\href{http://itas2016.iitp.ru/pdf/1570303389.pdf}{Probabilistic prediction of nuclear receptors’ biological activity}. Proceedings of ITaS, 2016, {\em in Russian}. Implemented the Probabilistic Classifier Chains algorithm using Python and tried it on the dataset
 %\todo[inline]{Publish FT on arXiv and update my CV}
-\item A. Petrov, {\bf \color{grayheading} S. Volodin} \mylink~\href{https://link.springer.com/article/10.1134/S1028335813080041}{Janibekov's effect and the laws of mechanics}. Doklady Akademii Nauk, 2013. Graphics for the article, experiments, {\bf first year} of my BSc
+\item A. Petrov, {\bf \color{gray} S. Volodin} \mylink~\href{https://link.springer.com/article/10.1134/S1028335813080041}{Janibekov's effect and the laws of mechanics}. Doklady Akademii Nauk, 2013. Graphics for the article, experiments, {\bf first year} of my BSc
 \end{rSection}
 
 \begin{rSection}{Work experience}

@@ -100,9 +100,9 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  {\color{grayheading}\MakeUppercase{\bf #1}} % Section title
+  {\color{headingcolor}\MakeUppercase{\bf #1}} % Section title
   \sectionlineskip
-  {\color{gray}\hrule} % Horizontal line
+  {\color{hrulecolor}\hrule} % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section
   }
