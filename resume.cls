@@ -87,6 +87,8 @@
 \let\ori@document=\document
 \renewcommand{\document}{
   \ori@document  % Begin document
+  % rearrange?
+  \begin{minipage}{0.8\textwidth}
   \printname % Print the name specified with \name
   \@ifundefined{@addressone}{}{ % Print the first address if specified
     \printaddress{\@addressone}}
@@ -94,6 +96,10 @@
     \printaddress{\@addresstwo}}
      \@ifundefined{@addressthree}{}{ % Print the third address if specified
     \printaddress{\@addressthree}}
+  \end{minipage}
+  \begin{minipage}{0.2\textwidth}
+	\includegraphics[width=\textwidth]{\@photo}
+  \end{minipage}
 }
 
 %----------------------------------------------------------------------------------------
