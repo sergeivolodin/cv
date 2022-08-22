@@ -39,6 +39,9 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
+\def \photo#1{\def\@photo{#1}} % Defines the \photo command to set photo
+\def \@photo {} % Sets \@photo empty by default
+
 \def \addressSep {$\diamond$} % Set default address separator to a diamond
 
 % One, two or three address lines can be specified 
