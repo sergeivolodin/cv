@@ -84,22 +84,31 @@
 %	PRINT THE HEADING LINES
 %----------------------------------------------------------------------------------------
 
+\newcommand{\titleheader}{
+	\printname % Print the name specified with \name
+	\@ifundefined{@addressone}{}{ % Print the first address if specified
+		\printaddress{\@addressone}}
+	\@ifundefined{@addresstwo}{}{ % Print the second address if specified
+		\printaddress{\@addresstwo}}
+	\@ifundefined{@addressthree}{}{ % Print the third address if specified
+		\printaddress{\@addressthree}}
+}
+
 \let\ori@document=\document
 \renewcommand{\document}{
   \ori@document  % Begin document
-  % rearrange?
-  \begin{minipage}{0.8\textwidth}
-  \printname % Print the name specified with \name
-  \@ifundefined{@addressone}{}{ % Print the first address if specified
-    \printaddress{\@addressone}}
-  \@ifundefined{@addresstwo}{}{ % Print the second address if specified
-    \printaddress{\@addresstwo}}
-     \@ifundefined{@addressthree}{}{ % Print the third address if specified
-    \printaddress{\@addressthree}}
-  \end{minipage}
-  \begin{minipage}{0.2\textwidth}
-	\includegraphics[width=\textwidth]{\@photo}
-  \end{minipage}
+
+  \ifdefined\showpicture
+	  % rearrange?
+	  \begin{minipage}{0.8\textwidth}
+        \titleheader
+	  \end{minipage}
+	  \begin{minipage}{0.2\textwidth}
+		\includegraphics[width=\textwidth]{\@photo}
+	  \end{minipage}
+  \else
+	\titleheader
+  \fi
 }
 
 %----------------------------------------------------------------------------------------
