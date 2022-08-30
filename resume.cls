@@ -133,8 +133,11 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
+\renewcommand{\dotfill}{%
+	\leavevmode\cleaders\hbox to 0.5em{\hss $\cdot$\hss }\hfill\kern0pt }
+
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\color{graypoint}{\bf #1}} {\vspace{-0.1pt}\color{gray}\dotfill} {#2} % Bold company name and date on the right
+ {\color{graypoint}{\bf #1}} {{\color{gray}\dotfill}} {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {\em #3} \hfill { #4} % Italic job title and location
