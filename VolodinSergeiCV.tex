@@ -45,7 +45,8 @@
 		]{#1}%
 	}%
 }
-\newcommand*{\emoji}[1]{\img{./emoji/#1.png}}
+\newcommand*{\emoji}[1]{\img{./emoji/\imgpref#1.png}}
+\newcommand*{\imgd}[1]{\img{./img/\imgpref#1.png}}
 
 \newcommand*{\logo}[1]{%
 	\raisebox{-.02\baselineskip}{%
@@ -53,7 +54,7 @@
 		height=10pt,
 		keepaspectratio,
 		interpolate
-		]{./img/#1}%
+		]{./img/\imgpref#1}%
 	}%
 }
 
@@ -61,6 +62,11 @@
 
 % show picture at the top?
 \def\showpicture{}
+
+% make images bleak
+% run for a in img emoji;do for b in $(ls $a); do echo $a/$b;convert -modulate 130,25,100 $a/$b $a/bleak-$b;done;done
+\def\imgpref{bleak-}
+%\def\imgpref{}
 
 %%% / CONFIGURATION
 
@@ -79,8 +85,8 @@
 \address{\mylink~\href{https://sergia-ch.github.io}{sergia-ch.github.io} / Wehntalerstrasse 20, 8057 Z\"{u}rich, Switzerland \emoji{flag-ch}}
 \address{Birth date: 3rd of October 1994 (\FPtrunc\myage{\myage}{0}\myage\,years), Russian \emoji{flag-ru}}
 \address{she/her. sergia94 at protonmail dot com \href{http://sergia-ch.github.io}{\emoji{internet}}
-	\href{https://twitter.com/sergia_ch}{\img{./img/twitter.png}}
-	\href{http://linkedin.com/in/sergeivolodin/}{\img{./img/li.png}} \href{http://github.com/sergia-ch}{\img{./img/gh.png}}
+	\href{https://twitter.com/sergia_ch}{\imgd{twitter}}
+	\href{http://linkedin.com/in/sergeivolodin/}{\imgd{li}} \href{http://github.com/sergia-ch}{\imgd{gh}}
 	\emoji{telephone}  +41 78 732 01 34}
 %\twocolumn
 
