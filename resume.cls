@@ -24,6 +24,7 @@
 \usepackage{scrextend}
 \changefontsizes{8pt}
 
+
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
@@ -97,7 +98,8 @@
 \let\ori@document=\document
 \renewcommand{\document}{
   \ori@document  % Begin document
-
+\renewcommand{\familydefault}{\sfdefault}
+\sffamily
   \ifdefined\showpicture
 	  % rearrange?
 	  \begin{minipage}{0.8\textwidth}
