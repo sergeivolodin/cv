@@ -7,6 +7,7 @@
 \usepackage{todonotes}
 \usepackage{amsmath}
 \usepackage{wasysym}
+\usepackage[outline]{contour}% http://ctan.org/pkg/contour
 
 % Google logo from https://tex.stackexchange.com/questions/292638/writing-google-logo-in-latex/292652
 \usepackage{tikz}
@@ -48,6 +49,8 @@
 \newcommand*{\emoji}[1]{\img{./emoji/\imgpref#1.png}}
 \newcommand*{\imgd}[1]{\img{./img/\imgpref#1.png}}
 
+\newcommand*{\mybold}[1]{{\contourlength{0.0001em}\contournumber{10}\contour{gray}{#1}}}
+
 \newcommand*{\logo}[1]{%
 	\raisebox{-.02\baselineskip}{%
 		\includegraphics[
@@ -81,6 +84,8 @@
 \FPdiv\myage{\result}{365.2425}
 \newcommand{\mylink}{{\color{gray}\faExternalLink}}
 \name{Sergia VOLODIN (Sergei)}
+%\contourlength{1pt}
+%\ontourumber{10}
 \photo{./photo/makeup.jpeg}
 \address{\mylink~\href{https://sergia-ch.github.io}{sergia-ch.github.io} / Wehntalerstrasse 20, 8057 Z\"{u}rich, Switzerland \emoji{flag-ch}}
 \address{Birth date: 3rd of October 1994 (\FPtrunc\myage{\myage}{0}\myage\,years), Russian \emoji{flag-ru}}
@@ -110,10 +115,11 @@
 
 \begin{rSection}{Education}
 \hspace{-1em}
+
 \begin{rSubsection}{\logo{Logo_EPFL.pdf} Swiss Federal Institute of Technology in Lausanne (EPFL) \emoji{flag-ch}}{Master's}{Lausanne, Switzerland}{Sep 2017 -- Apr 2021}
 %\item School of Computer and Communication Sciences
-\myitem Master's degree in {\bf Computer Science,} GPA: {\bf 5.67}/6
-\myitem Minor in Computational {\bf Neurosciences}
+\myitem Master's degree in \mybold{Computer Science,} GPA: \mybold{5.67}/6
+\myitem Minor in Computational \mybold{Neurosciences}
 \myitem Research Assistant position (2017--2019)
 \myitem Thesis \mylink~\href{https://sergia-ch.github.io/causality-simplicity/CauseOccam_Learning_Interpretable_Abstract_Representations_in_Reinforcement_Learning_Environments_via_Model_Sparsity.pdf}{"CauseOccam: Learning Interpretable Abstract Representations in
 Reinforcement Learning Environments via Model Sparsity"}
@@ -121,25 +127,25 @@ Reinforcement Learning Environments via Model Sparsity"}
 %\hrule
 \begin{rSubsection}{\logo{mipt.png} Moscow Institute of Physics and Technology \emoji{flag-ru}}{Bachelor's}{Moscow, Russia}{June 2017}
 %\myitem Department of Control and Applied Mathematics
-\item[] Bachelor's degree in {\bf Applied Mathematics,} GPA: {\bf 4.84}/5
+\item[] Bachelor's degree in \mybold{Applied Mathematics,} GPA: \mybold{4.84}/5
 \end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Skills}
 	\vspace{-1em}
-	\item {\color{gray}\bf Relevant courses:} {\bf Machine Learning, Software Engineering,} {\small Unsupervised and Reinforcement Learning, Convex Optimization, Distributed Algorithms, Algorithms, Random graph theory, Functional Programming, Set Theory, Random Processes, Functional Analysis, Biological modeling of neural networks, Complexity theory, Learning theory, Neuroscience: behavior and cognition, Neuroprosthetics, Theory and methods for Reinforcement Learning, Optimization for Machine Learning, Computer Vision}
-	\item {\color{gray}\bf Scientific programming:} {\bf Keras, TensorFlow,} {\bf PyTorch,} ray/tune/rllib, tf-agents, scikit-learn, Brian 2, MATLAB, Mathematica, R
-	\item {\color{gray}\bf Programming languages:} Python, C/C++, Java, TypeScript, {\small Scala, nasm, C\#, AVR C++}
-	\item {\color{gray}\bf Frameworks:} Qt/QML, Django, {\small Android Studio, OpenGL/GLSL, Unity 3D, Blender, React.js}
-	\item {\color{gray}\bf Environment:} Git, \LaTeX, Bash, Debian/Ubuntu Linux
-	\item {\color{gray}\bf Scientific skills:} {\bf experimental} sections of research papers, working on {\bf theoretical} problems, scientific presentation, data analysis
-	\item {\color{gray}\bf Software development:} {\bf agile} software development (Scrum), CI/CD, debugging, design patterns, concurrent and distributed systems, {\small TCP/IP networking, AVR microcontrollers, Arduino platform, team and project management in small startups}
-	\item {\color{gray}\bf Languages:} \emoji{flag-us} English: \mylink~\href{https://sergia-ch.github.io/epfl/TOEFL.pdf}{TOEFL iBT {\bf 113}/120}, {\small \emoji{flag-fr} French: A1, \emoji{flag-ru} Russian: native}
+	\item \mybold{\color{gray}Relevant courses:} \mybold{Machine Learning, Software Engineering,} {\small Unsupervised and Reinforcement Learning, Convex Optimization, Distributed Algorithms, Algorithms, Random graph theory, Functional Programming, Set Theory, Random Processes, Functional Analysis, Biological modeling of neural networks, Complexity theory, Learning theory, Neuroscience: behavior and cognition, Neuroprosthetics, Theory and methods for Reinforcement Learning, Optimization for Machine Learning, Computer Vision}
+	\item \mybold{\color{gray}Scientific programming:} \mybold{Keras, TensorFlow, PyTorch,} ray/tune/rllib, tf-agents, scikit-learn, Brian 2, MATLAB, Mathematica, R
+	\item \mybold{\color{gray}Programming languages:} Python, C/C++, Java, TypeScript, {\small Scala, nasm, C\#, AVR C++}
+	\item \mybold{\color{gray}Frameworks:} Qt/QML, Django, {\small Android Studio, OpenGL/GLSL, Unity 3D, Blender, React.js}
+	\item \mybold{\color{gray}Environment:} Git, \LaTeX, Bash, Debian/Ubuntu Linux
+	\item \mybold{\color{gray}Scientific skills:} \mybold{experimental} sections of research papers, working on \mybold{theoretical} problems, scientific presentation, data analysis
+	\item \mybold{\color{gray}Software development:} \mybold{agile} software development (Scrum), CI/CD, debugging, design patterns, concurrent and distributed systems, {\small TCP/IP networking, AVR microcontrollers, Arduino platform, team and project management in small startups}
+	\item \mybold{\color{gray}Languages:} \emoji{flag-us} English: \mylink~\href{https://sergia-ch.github.io/epfl/TOEFL.pdf}{TOEFL iBT \mybold{113}/120}, {\small \emoji{flag-fr} French: A1, \emoji{flag-ru} Russian: native}
 \end{rSection}
 
 \begin{rSection}{Research experience}			  
 	\begin{rSubsection}{EPFL, Laboratory for Computational Neuroscience \emoji{flag-ch}}{Master's Thesis student}{Lausanne, Switzerland}{Oct 2020 -- Apr 2021}
-		\myitem Designed \mylink~\href{https://github.com/sergia-ch/causality-disentanglement-rl}{an algorithm} with {\bf Python 3, Pytorch and ray} based on the \mylink~"\href{https://arxiv.org/abs/1709.08568}{Consciousness Prior}" proposal that finds a simple causal model of an RL environment in the general case from pixels. The project is a continuation of my Google Research internship (see below)
+		\myitem Designed \mylink~\href{https://github.com/sergia-ch/causality-disentanglement-rl}{an algorithm} with \mybold{Python 3, Pytorch and ray} based on the \mylink~"\href{https://arxiv.org/abs/1709.08568}{Consciousness Prior}" proposal that finds a simple causal model of an RL environment in the general case from pixels. The project is a continuation of my Google Research internship (see below)
 		\myitem The algorithm works on benchmarks, see my thesis \mylink~"\href{https://sergia-ch.github.io/causality-simplicity/CauseOccam_Learning_Interpretable_Abstract_Representations_in_Reinforcement_Learning_Environments_via_Model_Sparsity.pdf}{CauseOccam: Learning Interpretable Abstract Representations in
 			Reinforcement Learning Environments via Model Sparsity}"
 		\myitem The work includes theoretical results on abstraction learning as well as a code base with tests and documentation
@@ -147,7 +153,7 @@ Reinforcement Learning Environments via Model Sparsity"}
 	\end{rSubsection}
 	
 	\begin{rSubsection}{\logo{chai-logo.png} \logo{UCBerkeley.png} Center for Human-Compatible AI (CHAI), Berkeley \emoji{flag-us}}{Summer Intern}{Berkeley, CA, United States (remote due to COVID-19, from Zurich, Switzerland \emoji{flag-ch})}{June 2020 -- Sep 2020}
-		\myitem Designed \mylink~\href{https://github.com/HumanCompatibleAI/better-adversarial-defenses/} {better {\bf defenses against {\bf adversarial policies}}} in Multi-Agent Reinforcement Learning via alternating training of opponents using {\bf Python 3, Tensorflow, ray, rllib}.
+		\myitem Designed \mylink~\href{https://github.com/HumanCompatibleAI/better-adversarial-defenses/} {better \mybold{defenses against adversarial policies}} in Multi-Agent Reinforcement Learning via alternating training of opponents using \mybold{Python 3, Tensorflow, ray, rllib}.
 		\myitem Ran hyperparameter sweeps on multiple machines with ray and rllib
 		\myitem Converted legacy code using stable baselines and Tensorflow 1.0 to rllib and Tensorflow 2.0
 		\myitem Results published as a blog post \mylink~"\href{https://forum.effectivealtruism.org/posts/YscrJFofd6S8eJGS8/defending-against-adversarial-policies-in-reinforcement}{Defending against Adversarial Policies in Reinforcement Learning with Alternating Training}" on the Effective Altruism forum
@@ -155,28 +161,28 @@ Reinforcement Learning Environments via Model Sparsity"}
 
 
 	\begin{rSubsection}{{\large\vspace*{-0.7mm}\google}\ Research \emoji{flag-us}}{Software Engineering Intern}{Mountain View, CA, United States}{Nov 2019 -- Feb 2020}
-		\myitem Designed an algorithm to uncover a linear {\bf Causal Model} of a {\bf Reinforcement Learning} environment using interventions with {\bf Python 3, Tensorflow, tf-agents}, and analyzed the effect of interventions on the quality of exploration
+		\myitem Designed an algorithm to uncover a linear \mybold{Causal Model} of a \mybold{Reinforcement Learning} environment using interventions with \mybold{Python 3, Tensorflow, tf-agents}, and analyzed the effect of interventions on the quality of exploration
 		\myitem Used TensorFlow and tf-agents to conduct the experiments with large hyperparameter sweeps
 		\myitem Results \mylink~\href{https://arxiv.org/abs/2002.05217}{published} as an ICLR CLDM workshop paper
 	\end{rSubsection}
 
 
 	\begin{rSubsection}{EPFL, Distributed Computing Laboratory \emoji{flag-ch}}{Research Assistant}{Lausanne, Switzerland}{Sep 2018 -- Oct 2019}
-		\myitem Investigated {\bf fault tolerance} of a neural network using {\bf Taylor approximation}
+		\myitem Investigated \mybold{fault tolerance} of a neural network using \mybold{Taylor approximation}
 		\myitem Introduced the {\em continuous limit} to \mylink~\href{https://arxiv.org/abs/1902.01686}{bound the error}, and compared to the Neural Tangent Kernel limit case
-		\myitem Conducted \mylink~\href{https://github.com/LPD-EPFL/ProbabilisticFaultToleranceNNs}{experiments} to test the theory using {\bf Keras} including the {\bf implementation} of custom layers and regularizers
+		\myitem Conducted \mylink~\href{https://github.com/LPD-EPFL/ProbabilisticFaultToleranceNNs}{experiments} to test the theory using \mybold{Keras} including the \mybold{implementation} of custom layers and regularizers
 %		\myitem Wrote and submitted a paper to ICML: \mylink~\href{https://arxiv.org/abs/1902.01686}{arXiv:1902.01686}
 	\end{rSubsection}
 
 	\begin{rSubsection}{EPFL, Computer-Human Interaction in Learning and Instruction laboratory \emoji{flag-ch}}{Research Assistant}{Lausanne, Switzerland}{Sep 2017 -- Aug 2018}
-		\myitem Created \mylink~\href{https://github.com/chili-epfl/qml-ar}{a {\color{black} \bf library} QML-AR} for seamless {\bf augmented reality} using {\bf OpenCV, Qt/C++ and Qt/QML} with competitive performance on Android and small visual negative impact
+		\myitem Created \mylink~\href{https://github.com/chili-epfl/qml-ar}{a \mybold{library} QML-AR} for seamless \mybold{augmented reality} using \mybold{OpenCV, Qt/C++ and Qt/QML} with competitive performance on Android and small visual negative impact
 		\myitem Designed an \mylink~\href{https://youtu.be/B4-2qYsAKH4}{activity for kids} for learning math using AR, tested the application in a classroom setting, analyzed the obtained data
 	\end{rSubsection}
 
 	\begin{rSubsection}{Skolkovo Institute of Science and Technology, Center for Energy Systems \emoji{flag-ru}}{Research Intern}{Moscow, Russia}{Sep 2016 -- Jul 2017}
 		%		\myitem Worked on the Power Flow Feasibility problem with Prof. Anatoly Dymarsky, Dr. Elena Gryazina, and Prof. Boris T. Polyak
-		\myitem Characterized using {\bf numerical optimization} and {\bf theoretically} the structure of the set of boundary non-convexities of an image of a quadratic map in case the number of non-convexities is infinite
-		\myitem Designed and implemented \mylink~\href{https://github.com/sergeivolodin/CAQM}{the Convexity Analysis of Quadratic Maps {\bf \color{black} library}} using {\bf MATLAB} which gives approximate solutions to a number of problems involving quadratic maps
+		\myitem Characterized using \mybold{numerical optimization} and \mybold{theoretically} the structure of the set of boundary non-convexities of an image of a quadratic map in case the number of non-convexities is infinite
+		\myitem Designed and implemented \mylink~\href{https://github.com/sergeivolodin/CAQM}{the Convexity Analysis of Quadratic Maps \mybold{library}} using \mybold{MATLAB} which gives approximate solutions to a number of problems involving quadratic maps
 	\end{rSubsection}
 
 	%	\begin{rSubsection}{MIPT, Chair of Data Analysis}{\\Feb 2016 -- Jul 2016}{Research project}{Moscow, Russia}
@@ -199,42 +205,42 @@ Reinforcement Learning Environments via Model Sparsity"}
 
 \begin{rSection}{Publications}
 \vspace{-1em}
-\item L\^{e}-Nguy\^{e}n Hoang, Louis Faucon, Aidan Jungo, {\bf Sergei Volodin,} Dalia Papuc, Orfeas Liossatos, Ben Crulis, Mariame Tighanimine, Isabela Constantin, Anastasiia Kucherenko, Alexandre Maurer, Felix Grimberg, Vlad Nitu, Chris Vossen, Sébastien Rouault, El-Mahdi El-Mhamdi. \mylink~\href{https://arxiv.org/abs/2107.07334}{Tournesol: A quest for a large, secure and trustworthy database of reliable human judgments}, 2021. Code for the platform (backend, ML, frontend), experiments, part of data analysis, writing
-\item \logo{iclr.png} {\bf Sergei Volodin,} Nevan Wichers, Jeremy Nixon. \mylink~\href{https://arxiv.org/abs/2002.05217}{Resolving Spurious Correlations in Causal Models of Environments via Interventions}, 2020. Topic choice, experiments, theory, writing. \mylink~\href{https://causalrlworkshop.github.io/program/cldm_8.html}{ICLR CLDM workshop 2020}.
-\item El-M. El-Mhamdi, R. Guerraoui, A. Kucharavy, {\bf \color{gray} S. Volodin.} \mylink~\href{https://arxiv.org/abs/1902.01686}{The Probabilistic Fault Tolerance of Neural Networks in the Continuous Limit}, 2019. Experiments, theory,  writing. %Under review of {\bf ICML}
-\item A. Dymarsky, E. Gryazina, {\bf \color{gray} S. Volodin}, B. Polyak. \mylink~\href{https://arxiv.org/abs/1810.00896}{Geometry of quadratic maps via convex relaxation}, 2018. Exp-s, theory, writing.% Under review of {\bf SIOPT}
+\item L\^{e}-Nguy\^{e}n Hoang, Louis Faucon, Aidan Jungo, \mybold{Sergei Volodin,} Dalia Papuc, Orfeas Liossatos, Ben Crulis, Mariame Tighanimine, Isabela Constantin, Anastasiia Kucherenko, Alexandre Maurer, Felix Grimberg, Vlad Nitu, Chris Vossen, Sébastien Rouault, El-Mahdi El-Mhamdi. \mylink~\href{https://arxiv.org/abs/2107.07334}{Tournesol: A quest for a large, secure and trustworthy database of reliable human judgments}, 2021. Code for the platform (backend, ML, frontend), experiments, part of data analysis, writing
+\item \logo{iclr.png} \mybold{Sergei Volodin,} Nevan Wichers, Jeremy Nixon. \mylink~\href{https://arxiv.org/abs/2002.05217}{Resolving Spurious Correlations in Causal Models of Environments via Interventions}, 2020. Topic choice, experiments, theory, writing. \mylink~\href{https://causalrlworkshop.github.io/program/cldm_8.html}{ICLR CLDM workshop 2020}.
+\item El-M. El-Mhamdi, R. Guerraoui, A. Kucharavy, \mybold{S. Volodin.} \mylink~\href{https://arxiv.org/abs/1902.01686}{The Probabilistic Fault Tolerance of Neural Networks in the Continuous Limit}, 2019. Experiments, theory,  writing. %Under review of {\bf ICML}
+\item A. Dymarsky, E. Gryazina, \mybold{S. Volodin}, B. Polyak. \mylink~\href{https://arxiv.org/abs/1810.00896}{Geometry of quadratic maps via convex relaxation}, 2018. Exp-s, theory, writing.% Under review of {\bf SIOPT}
 %\item {\bf S. Volodin}, M. Popova, V. Strijov \mylink~\href{http://itas2016.iitp.ru/pdf/1570303389.pdf}{Probabilistic prediction of nuclear receptors’ biological activity}. Proceedings of ITaS, 2016, {\em in Russian}. Implemented the Probabilistic Classifier Chains algorithm using Python and tried it on the dataset
 %\todo[inline]{Publish FT on arXiv and update my CV}
-\item A. Petrov, {\bf \color{gray} S. Volodin} \mylink~\href{https://link.springer.com/article/10.1134/S1028335813080041}{Janibekov's effect and the laws of mechanics}. Doklady Akademii Nauk, 2013. Graphics for the article, experiments, {\bf first year} of my BSc
+\item A. Petrov, \mybold{S. Volodin} \mylink~\href{https://link.springer.com/article/10.1134/S1028335813080041}{Janibekov's effect and the laws of mechanics}. Doklady Akademii Nauk, 2013. Graphics for the article, experiments, first year of my BSc
 \end{rSection}
 
 \begin{rSection}{Work experience}
 	%Gap year Jan 2015 -- Feb 2016
     \begin{rSubsection}{\mylink~\href{https://faveforfans.com}{Fave For Fans \emoji{fave}}}{Software Engineer}{Platform dedicated to passionate fans, Z\"{u}rich, Switzerland \emoji{flag-ch}}{Sep 2021 -- May 2022}
-        \myitem {\bf Responsible} for the backend development with microservices on Cloudflare Workers with TypeScript, an ArangoDB-based database, automatic data schema validation, and CI/CD with integration tests. First full-time engineer at the company.
-        \myitem {\bf Proposing} and discussing ways to create more ethical and democratic social media sharing mechanisms, organizing voting in the team to discuss proposals ("mini \mylink~\href{https://en.wikipedia.org/wiki/Stakeholder_theory}{Stakeholder Capitalism}")
-        \myitem {\bf Research} into ways of obtaining data from third-party services with privacy guarantees
-        \myitem {\bf Conducted} analysis of the database to create better ranking results
+        \myitem \mybold{Responsible} for the backend development with microservices on Cloudflare Workers with TypeScript, an ArangoDB-based database, automatic data schema validation, and CI/CD with integration tests. First full-time engineer at the company.
+        \myitem \mybold{Proposing} and discussing ways to create more ethical and democratic social media sharing mechanisms, organizing voting in the team to discuss proposals ("mini \mylink~\href{https://en.wikipedia.org/wiki/Stakeholder_theory}{Stakeholder Capitalism}")
+        \myitem \mybold{Research} into ways of obtaining data from third-party services with privacy guarantees
+        \myitem \mybold{Conducted} analysis of the database to create better ranking results
     \end{rSubsection}
 
 	\begin{rSubsection}{\mylink~\href{http://tournesol.app}{Tournesol \emoji{sunflower}}}{Co-founder\&ML engineer}{Startup designing better recommender systems, Lausanne, Switzerland \emoji{flag-ch}}{May 2020 -- May 2021}
-		\myitem {\bf Co-founded a startup} working on contributor-driven collaborative recommender systems
-		\myitem {\bf Responsible} for \mylink~\href{https://github.com/tournesol-app/tournesol}{back-end engineering using {\bf Django}, and Machine Learning engineering with {\bf TensorFlow}, the API server}
-		\myitem {\bf Responsible} as well for system administration (Debian), (partially) front-end development with {\bf React.js} and parts of algorithm design
-		\myitem {\bf Co-authored} \mylink~\href{https://arxiv.org/abs/2107.07334}{the  paper} with our results
+		\myitem \mybold{Co-founded a startup} working on contributor-driven collaborative recommender systems
+		\myitem \mybold{Responsible} for \mylink~\href{https://github.com/tournesol-app/tournesol}{back-end engineering using \mybold{Django}, and Machine Learning engineering with \mybold{TensorFlow}, the API server}
+		\myitem \mybold{Responsible} as well for system administration (Debian), (partially) front-end development with \mybold{React.js} and parts of algorithm design
+		\myitem \mybold{Co-authored} \mylink~\href{https://arxiv.org/abs/2107.07334}{the  paper} with our results
 	\end{rSubsection}
 
 	\begin{rSubsection}{\mylink~\href{http://escape-control.com}{EscapeControl \emoji{old-key}}}{Founder\&Backend engineer}{Own b2b startup for escape rooms, Moscow, Russia \emoji{flag-ru}}{Jul 2015 -- Feb 2016}
-		\myitem {\bf Created a startup} selling software and hardware for \mylink~\href{https://www.youtube.com/watch?v=kXbubjs7aTA}{real-world escape room games} which allows to speed up the construction and reduce maintenance costs
-		\myitem {\bf Responsible} for back-end software engineering ({\bf C++/Python}), servers administration, sales and customer support
-		\myitem {\bf Managed} a team of two web developers until a successful launch of the web interface
+		\myitem \mybold{Created a startup} selling software and hardware for \mylink~\href{https://www.youtube.com/watch?v=kXbubjs7aTA}{real-world escape room games} which allows to speed up the construction and reduce maintenance costs
+		\myitem \mybold{Responsible} for back-end software engineering with \mybold{C++/Python}, servers administration, sales and customer support
+		\myitem \mybold{Managed} a team of two web developers until a successful launch of the web interface
 		\myitem Sold more than forty solutions which are currently running in different countries across the globe and provided remote support
 	\end{rSubsection}
 
 	\begin{rSubsection}{ITBrat \emoji{stocks}}{Software Engineer}{Algorithmic trading startup, Moscow, Russia \emoji{flag-ru}}{Jul 2015 -- Feb 2016}
-		\myitem {\bf Developed} algorithmic trading application from initial discussion with the team to deployment and supporting in {\bf C++}
+		\myitem \mybold{Developed} algorithmic trading application from initial discussion with the team to deployment and supporting in \mybold{C++}
 		\myitem Added low-level user-space networking to the project which allowed to decrease latency and increase profit
-		\myitem {\bf Responsible} for the performance of the code
+		\myitem \mybold{Responsible} for the performance of the code
 %		\myitem Designed and supported the environment for the algorithm: build stage, version control, performance analysis using network dumps
 	\end{rSubsection}
 
@@ -252,8 +258,8 @@ Reinforcement Learning Environments via Model Sparsity"}
 
 \begin{rSection}{Scholarships}
 	\vspace{-1em}
-	\item \mylink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars}, a paid {\bf Research Assistant} position, Swiss Federal Institute of Technology in Lausanne (EPFL), 2017 -- 2019
-	\item \mylink~\href{http://phystech-foundation.org/}{Abramov Fund's} scholarship for excellent {\bf grades,} 2014
+	\item \mylink~\href{https://ic.epfl.ch/ResearchScholars}{Research Scholars}, a paid \mybold{Research Assistant} position, Swiss Federal Institute of Technology in Lausanne (EPFL), 2017 -- 2019
+	\item \mylink~\href{http://phystech-foundation.org/}{Abramov Fund's} scholarship for excellent \mybold{grades,} 2014
 \end{rSection}
 
 \begin{rSection}{Projects}
@@ -265,30 +271,30 @@ Reinforcement Learning Environments via Model Sparsity"}
 %	\end{rSubsection}
 
 	\begin{rSubsection}{Safe Proximal Policy Optimization}{}{EPFL EE-618 course project, advised by Dr. Kamalaruban Parameswaran and Prof. Volkan Cevher, Lausanne, Switzerland \emoji{flag-ch}}{2019}
-		\myitem \mylink~\href{https://www.overleaf.com/read/cvxkswbspgpb}{Added a projection step} to the {\bf Proximal Policy Optimization} algorithm to comply with requirements of {\bf Constrained Markov Decision Processes}
+		\myitem \mylink~\href{https://www.overleaf.com/read/cvxkswbspgpb}{Added a projection step} to the \mybold{Proximal Policy Optimization} algorithm to comply with requirements of \mybold{Constrained Markov Decision Processes}
 		\myitem \mylink~\href{https://github.com/sergeivolodin/SafeContinuousStateRL}{Implemented code in Tensorflow} and tested it in simple environments
 		\myitem Presented the project at the RLSS 2019 summer school (Lille, France)
 	\end{rSubsection}
 
 	\begin{rSubsection}{Quadcopter drone from scratch project}{}{Russia \emoji{flag-ru}}{2012 -- 2014}
 		\myitem Developed \mylink~\href{https://github.com/it-workshop/Quadrocopter}{an algorithm} in C++ for stabilization of a quadcopter drone from scratch using AVR microcontrollers, IMU sensors and PID regulators
-		\myitem {\bf Managed} the project consisting of 2-5 developers
+		\myitem \mybold{Co-managed} the project consisting of 2-5 developers
 		\myitem Conducted the analysis of launches to improve \mylink~\href{https://www.youtube.com/watch?v=AxDoO-gNRtc}{flying quality}
-		\myitem Results were {\bf published} as a \mylink~\href{http://web.archive.org/web/20141016114551/http://habrahabr.ru/company/technoworks/blog/216437/}{popular science article} {\em (in Russian)}
+		\myitem Results were \mybold{published} as a \mylink~\href{http://web.archive.org/web/20141016114551/http://habrahabr.ru/company/technoworks/blog/216437/}{popular science article} {\em (in Russian)}
 	\end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Conferences and summer schools}
 %\todo[inline]{Choose only the best ones}
 \vspace{-1em}
-\item \emoji{flag-de} \mylink~\href{http://mlss.tuebingen.mpg.de/2020/}{Machine Learning Summer School, 2020} (virtual due to COVID-19){, \em {\bf poster} presenter}
+\item \emoji{flag-de} \mylink~\href{http://mlss.tuebingen.mpg.de/2020/}{Machine Learning Summer School, 2020} (virtual due to COVID-19){, \em \mybold{poster} presenter}
 %\item \mylink~\href{https://appliedmldays.org}{Applied Machine Learning Days} (Lausanne, Switzerland, 2019){, \em participant of workshops}
-\item \emoji{flag-fr} \mylink~\href{https://rlss.inria.fr}{Reinforcement Learning Summer School, 2019} (Lille, France){, \em {\bf poster} presenter, selected to receive {\bf financial help}}
-\item \emoji{flag-fr} \mylink~\href{https://ds3-datascience-polytechnique.fr}{Data science summer school, 2019} (Paris, France){, \em {\bf poster} presenter}
-\item \emoji{flag-it} \mylink~\href{https://www.qtday.it/agenda/session/52811}{QtDay 2019} (Firenze, Italy){, \em {\bf speaker,} one hour session on qml-ar}
+\item \emoji{flag-fr} \mylink~\href{https://rlss.inria.fr}{Reinforcement Learning Summer School, 2019} (Lille, France){, \em \mybold{poster} presenter, selected to receive \mybold{financial help}}
+\item \emoji{flag-fr} \mylink~\href{https://ds3-datascience-polytechnique.fr}{Data science summer school, 2019} (Paris, France){, \em \mybold{poster} presenter}
+\item \emoji{flag-it} \mylink~\href{https://www.qtday.it/agenda/session/52811}{QtDay 2019} (Firenze, Italy){, \em \mybold{speaker,} one hour session on qml-ar}
 \item \emoji{flag-fr} \mylink~\href{https://project.inria.fr/paiss/}{P.A.I.S.S.} AI Summer School, INRIA Grenoble, 2018{, \em participant in tutorials given by top experts; \mylink~\href{http://www.europe.naverlabs.com/Blog/Students-at-PAISS}{selected} to receive financial aid }
 %\item \mylink~\href{http://deepbayes.ru}{DeepBayes} school on Bayesian methods in Deep Learning (Moscow, 2017){, \em participant of lectures and practical sessions on Bayesian Methods}
-\item \emoji{flag-ru} \mylink~\href{http://iitp.ru/en/conferences/itas}{Information Technologies and Systems} (Saint-Petersburg, Repino, 2016){, \em {\bf speaker,} poster presenter}
+\item \emoji{flag-ru} \mylink~\href{http://iitp.ru/en/conferences/itas}{Information Technologies and Systems} (Saint-Petersburg, Repino, 2016){, \em \mybold{speaker,} poster presenter}
 %\item \mylink~\href{https://sites.google.com/site/traditionalschool/about}{School} ``Control, Information, Optimization'' (Saint-Petersburg, Repino, 2016){, \em Poster presenter}
 \end{rSection}
 
@@ -299,9 +305,9 @@ Reinforcement Learning Environments via Model Sparsity"}
 
 \begin{rSection}{Competitions}
 \vspace{-1em}
-\item \emoji{flag-ch} \mylink~\href{https://hashcodejudge.withgoogle.com/scoreboard}{Google HashCode} Qualification round coding contest, {\bf top 6\%} (team EPFL\_Noobs), managed the team, developed algorithms and did the coding, 2019\vspace{1em}\\
+\item \emoji{flag-ch} \mylink~\href{https://hashcodejudge.withgoogle.com/scoreboard}{Google HashCode} Qualification round coding contest, \mybold{top 6\%} (team EPFL\_Noobs), managed the team, developed algorithms and did the coding, 2019\vspace{1em}\\
 \emoji{flag-ru}
-\mylink~\href{http://web.archive.org/web/20170224094223/http://rl.deephack.me/}{DeepHack.RL} hackathon on Deep {\bf Reinforcement} Learning for Atari games, managed the team and developed an \mylink~\href{https://github.com/sergeivolodin/deephack.rl}{evolutionary algorithm with an autoencoder}, MIPT, Moscow, Russia, 2017
+\mylink~\href{http://web.archive.org/web/20170224094223/http://rl.deephack.me/}{DeepHack.RL} hackathon on Deep \mybold{Reinforcement} Learning for Atari games, managed the team and developed an \mylink~\href{https://github.com/sergeivolodin/deephack.rl}{evolutionary algorithm with an autoencoder}, MIPT, Moscow, Russia, 2017
 \end{rSection}
 
 \begin{rSection}{Interests}
