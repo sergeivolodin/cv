@@ -7,6 +7,7 @@
 \usepackage{todonotes}
 \usepackage{amsmath}
 \usepackage{wasysym}
+\usepackage{soul}
 \usepackage[outline]{contour}% http://ctan.org/pkg/contour
 
 % Google logo from https://tex.stackexchange.com/questions/292638/writing-google-logo-in-latex/292652
@@ -49,7 +50,18 @@
 \newcommand*{\emoji}[1]{\img{./emoji/\imgpref#1.png}}
 \newcommand*{\imgd}[1]{\img{./img/\imgpref#1.png}}
 
-\newcommand*{\mybold}[1]{{\contourlength{0.0001em}\contournumber{10}\contour{gray}{#1}}}
+%\setul{0.3ex}{0.1ex}
+\definecolor{ulcolor}{RGB}{230, 230, 230}
+%\setulcolor{ulcolor}
+
+%\newcommand*{\mybold}[1]{{\contourlength{0.1ex}\contournumber{10}\contour{ulcolor}{#1}}}
+\definecolor{pinkunderline}{RGB}{100, 0, 100}
+\newcommand*{\mybold}[1]{{\color{pinkunderline} #1}}
+\newcommand*{\myboldq}[1]{{#1}}
+%\newcommand*{\mybold}[1]{\ul{#1}}
+
+%too unnoticeable
+%\newcommand*{\mybold}[1]{{\em #1}}
 
 \newcommand*{\logo}[1]{%
 	\raisebox{-.02\baselineskip}{%
@@ -100,11 +112,11 @@
 	 \sffamily
 	
 \definecolor{grayitem}{RGB}{80, 80, 80}
-\definecolor{pinkitem}{RGB}{255, 0, 255}
-\definecolor{headingcolor}{RGB}{115, 0, 255}
+\definecolor{pinkitem}{RGB}{100, 0, 100}
+\definecolor{headingcolor}{RGB}{50, 0, 100}
 \definecolor{graypoint}{RGB}{50, 50, 50}
 \definecolor{gray}{RGB}{150, 150, 150}
-\definecolor{hrulecolor}{RGB}{25, 0, 255}
+\definecolor{hrulecolor}{RGB}{25, 0, 150}
 \newcommand{\myitem}{\item[\textcolor{pinkitem}{\Huge\raisebox{-2pt}{$\cdot$}}]}
 
 \begin{rSection}{Abstract}
@@ -133,14 +145,14 @@ Reinforcement Learning Environments via Model Sparsity"}
 
 \begin{rSection}{Skills}
 	\vspace{-1em}
-	\item \mybold{\color{gray}Relevant courses:} \mybold{Machine Learning, Software Engineering,} {\small Unsupervised and Reinforcement Learning, Convex Optimization, Distributed Algorithms, Algorithms, Random graph theory, Functional Programming, Set Theory, Random Processes, Functional Analysis, Biological modeling of neural networks, Complexity theory, Learning theory, Neuroscience: behavior and cognition, Neuroprosthetics, Theory and methods for Reinforcement Learning, Optimization for Machine Learning, Computer Vision}
-	\item \mybold{\color{gray}Scientific programming:} \mybold{Keras, TensorFlow, PyTorch,} ray/tune/rllib, tf-agents, scikit-learn, Brian 2, MATLAB, Mathematica, R
-	\item \mybold{\color{gray}Programming languages:} Python, C/C++, Java, TypeScript, {\small Scala, nasm, C\#, AVR C++}
-	\item \mybold{\color{gray}Frameworks:} Qt/QML, Django, {\small Android Studio, OpenGL/GLSL, Unity 3D, Blender, React.js}
-	\item \mybold{\color{gray}Environment:} Git, \LaTeX, Bash, Debian/Ubuntu Linux
-	\item \mybold{\color{gray}Scientific skills:} \mybold{experimental} sections of research papers, working on \mybold{theoretical} problems, scientific presentation, data analysis
-	\item \mybold{\color{gray}Software development:} \mybold{agile} software development (Scrum), CI/CD, debugging, design patterns, concurrent and distributed systems, {\small TCP/IP networking, AVR microcontrollers, Arduino platform, team and project management in small startups}
-	\item \mybold{\color{gray}Languages:} \emoji{flag-us} English: \mylink~\href{https://sergia-ch.github.io/epfl/TOEFL.pdf}{TOEFL iBT \mybold{113}/120}, {\small \emoji{flag-fr} French: A1, \emoji{flag-ru} Russian: native}
+	\item \myboldq{Relevant courses:} \mybold{Machine Learning, Software Engineering,} {\small Unsupervised and Reinforcement Learning, Convex Optimization, Distributed Algorithms, Algorithms, Random graph theory, Functional Programming, Set Theory, Random Processes, Functional Analysis, Biological modeling of neural networks, Complexity theory, Learning theory, Neuroscience: behavior and cognition, Neuroprosthetics, Theory and methods for Reinforcement Learning, Optimization for Machine Learning, Computer Vision}
+	\item \myboldq{Scientific programming:} \mybold{Keras, TensorFlow, PyTorch,} ray/tune/rllib, tf-agents, scikit-learn, Brian 2, MATLAB, Mathematica, R
+	\item \myboldq{Programming languages:} \mybold{Python, C/C++}, TypeScript, Java, {\small Scala, nasm, C\#, AVR C++}
+	\item \myboldq{Frameworks:} Qt/QML, Django, {\small Android Studio, OpenGL/GLSL, Unity 3D, Blender, React.js}
+	\item \myboldq{Environment:} \mybold{Git, \LaTeX, Bash, Debian/Ubuntu Linux}
+	\item \myboldq{Scientific skills:} \mybold{experimental} sections of research papers, working on \mybold{theoretical} problems, scientific presentation, data analysis
+	\item \myboldq{Software development:} \mybold{agile} software development (Scrum), CI/CD, debugging, design patterns, concurrent and distributed systems, {\small TCP/IP networking, AVR microcontrollers, Arduino platform, team and project management in \mybold{small startups}}
+	\item \myboldq{Languages:} \emoji{flag-us} English: \mylink~\href{https://sergia-ch.github.io/epfl/TOEFL.pdf}{TOEFL iBT \mybold{113}/120}, {\small \emoji{flag-fr} French: A1, \emoji{flag-ru} Russian: native}
 \end{rSection}
 
 \begin{rSection}{Research experience}			  
@@ -148,7 +160,7 @@ Reinforcement Learning Environments via Model Sparsity"}
 		\myitem Designed \mylink~\href{https://github.com/sergia-ch/causality-disentanglement-rl}{an algorithm} with \mybold{Python 3, Pytorch and ray} based on the \mylink~"\href{https://arxiv.org/abs/1709.08568}{Consciousness Prior}" proposal that finds a simple causal model of an RL environment in the general case from pixels. The project is a continuation of my Google Research internship (see below)
 		\myitem The algorithm works on benchmarks, see my thesis \mylink~"\href{https://sergia-ch.github.io/causality-simplicity/CauseOccam_Learning_Interpretable_Abstract_Representations_in_Reinforcement_Learning_Environments_via_Model_Sparsity.pdf}{CauseOccam: Learning Interpretable Abstract Representations in
 			Reinforcement Learning Environments via Model Sparsity}"
-		\myitem The work includes theoretical results on abstraction learning as well as a code base with tests and documentation
+		\myitem The work includes \mybold{theoretical results on abstraction learning as well as a code base with tests and documentation}
 		\myitem The thesis defended on the 21st of April 2021 with Adam Gleave (Berkeley/DeepMind) as an external expert
 	\end{rSubsection}
 	
@@ -218,14 +230,14 @@ Reinforcement Learning Environments via Model Sparsity"}
 	%Gap year Jan 2015 -- Feb 2016
     \begin{rSubsection}{\mylink~\href{https://faveforfans.com}{Fave For Fans \emoji{fave}}}{Software Engineer}{Platform dedicated to passionate fans, Z\"{u}rich, Switzerland \emoji{flag-ch}}{Sep 2021 -- May 2022}
         \myitem \mybold{Responsible} for the backend development with microservices on Cloudflare Workers with TypeScript, an ArangoDB-based database, automatic data schema validation, and CI/CD with integration tests. First full-time engineer at the company.
-        \myitem \mybold{Proposing} and discussing ways to create more ethical and democratic social media sharing mechanisms, organizing voting in the team to discuss proposals ("mini \mylink~\href{https://en.wikipedia.org/wiki/Stakeholder_theory}{Stakeholder Capitalism}")
+        \myitem \mybold{Proposing} and discussing ways to create \mylink~\href{https://sergia-ch.github.io/fave/direct_sharing.png}{more \mybold{ethical and democratic social media} sharing mechanisms}, organizing voting in the team to discuss proposals ("mini \mylink~\href{https://en.wikipedia.org/wiki/Stakeholder_theory}{Stakeholder Capitalism}")
         \myitem \mybold{Research} into ways of obtaining data from third-party services with privacy guarantees
         \myitem \mybold{Conducted} analysis of the database to create better ranking results
     \end{rSubsection}
 
 	\begin{rSubsection}{\mylink~\href{http://tournesol.app}{Tournesol \emoji{sunflower}}}{Co-founder\&ML engineer}{Startup designing better recommender systems, Lausanne, Switzerland \emoji{flag-ch}}{May 2020 -- May 2021}
 		\myitem \mybold{Co-founded a startup} working on contributor-driven collaborative recommender systems
-		\myitem \mybold{Responsible} for \mylink~\href{https://github.com/tournesol-app/tournesol}{back-end engineering using \mybold{Django}, and Machine Learning engineering with \mybold{TensorFlow}, the API server}
+		\myitem \mybold{Responsible} for \mylink~\href{https://github.com/tournesol-app/tournesol/tree/old_main}{back-end engineering using \mybold{Django}, and Machine Learning engineering with \mybold{TensorFlow}, the API server}
 		\myitem \mybold{Responsible} as well for system administration (Debian), (partially) front-end development with \mybold{React.js} and parts of algorithm design
 		\myitem \mybold{Co-authored} \mylink~\href{https://arxiv.org/abs/2107.07334}{the  paper} with our results
 	\end{rSubsection}
@@ -253,7 +265,7 @@ Reinforcement Learning Environments via Model Sparsity"}
 \end{rSection}
 
 \begin{rSection}{Research interests}
-	Artificial Intelligence, Machine Learning, Artificial Intelligence Safety/Ethics, Causal Reasoning, Adversarial policies, Mathematical Optimization, Robotics, Consciousness research %, Artificial General Intelligence, Consciousness
+	Artificial Intelligence Safety/Ethics, Artificial Intelligence, Machine Learning, Causal Reasoning, Neuroscience, Adversarial policies, Mathematical Optimization, Robotics, Consciousness research %, Artificial General Intelligence, Consciousness
 \end{rSection}
 
 \begin{rSection}{Scholarships}
