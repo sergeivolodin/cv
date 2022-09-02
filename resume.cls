@@ -22,7 +22,7 @@
 
 \LoadClass[8pt,a4paper]{article} % Font size and paper type
 \usepackage{scrextend}
-\changefontsizes{8pt}
+\changefontsizes{9pt}
 
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
@@ -103,9 +103,11 @@
   \ifdefined\showpicture
 	  % rearrange?
 	  \begin{minipage}{0.8\textwidth}
+	  	\vspace{-5em}
         \titleheader
 	  \end{minipage}
 	  \begin{minipage}{0.2\textwidth}
+	  	\vspace{-5em}
 		\includegraphics[width=\textwidth]{\@photo}
 	  \end{minipage}
   \else
