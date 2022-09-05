@@ -11,10 +11,12 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 
-\pagestyle{fancy}
+
 \fancyhf{}
 
-\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\rfoot{Page \thepage \hspace{1pt} of 2}
 \usepackage{soul}
 \usepackage{pifont}
 \usepackage[outline]{contour}% http://ctan.org/pkg/contour
@@ -117,6 +119,7 @@
 %\twocolumn
 
 \begin{document}
+	\pagestyle{fancy}
 	 \renewcommand{\familydefault}{\sfdefault}
 	 \sffamily
 	
@@ -258,8 +261,10 @@ Reinforcement Learning Environments via Model Sparsity"}
 \vspace{30pt}
 \begin{center}
 	\mybold{
-		%{\Huge \ding{80}\ding{80}\ding{80}}\\\vspace{10pt}
-		{\em\Huge EXTRAS}
+		%{\Huge \ding{80}}\\\vspace{10pt}
+		{\em\Huge EXTRAS\ding{80}}
+		\rfoot{Extra page \thepage \hspace{1pt} of 2}
+		\setcounter{page}{1}
 		%\\\vspace{10pt} {\Huge\ding{80}\ding{80}\ding{80}}
 	}
 \end{center}
