@@ -7,7 +7,16 @@
 \usepackage{todonotes}
 \usepackage{amsmath}
 \usepackage{wasysym}
+%\pagenumbering{roman}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 \usepackage{soul}
+\usepackage{pifont}
 \usepackage[outline]{contour}% http://ctan.org/pkg/contour
 
 % Google logo from https://tex.stackexchange.com/questions/292638/writing-google-logo-in-latex/292652
@@ -242,13 +251,19 @@ Reinforcement Learning Environments via Model Sparsity"}
 
 \end{rSection}
 
-\dotfill
+%\dotfill
 
 \newpage
 \dotfill
+\vspace{30pt}
 \begin{center}
-	\mybold{\em EXTRA}
+	\mybold{
+		%{\Huge \ding{80}\ding{80}\ding{80}}\\\vspace{10pt}
+		{\em\Huge EXTRAS}
+		%\\\vspace{10pt} {\Huge\ding{80}\ding{80}\ding{80}}
+	}
 \end{center}
+\vspace{30pt}
 %\changefontsizes{7pt}
 
 \begin{rSection}{Extra Research Experience}
