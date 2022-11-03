@@ -7,6 +7,7 @@
 \usepackage{todonotes}
 \usepackage{amsmath}
 \usepackage{wasysym}
+\usepackage[normalem]{ulem}
 %\pagenumbering{roman}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -196,7 +197,7 @@ Reinforcement Learning Environments via Model Sparsity"}
 		\myitem Results published as a blog post \mylink~"\href{https://forum.effectivealtruism.org/posts/YscrJFofd6S8eJGS8/defending-against-adversarial-policies-in-reinforcement}{Defending against Adversarial Policies in Reinforcement Learning with Alternating Training}" on the Effective Altruism forum
 	\end{rSubsection}
 
-	\begin{rSubsection}{\mylink~\href{http://tournesol.app}{Tournesol \emoji{sunflower}}}{Co-founder\&ML engineer}{Startup designing better recommender systems, Lausanne, Switzerland \emoji{flag-ch}}{May 2020 -- May 2021}
+	\begin{rSubsection}{\mylink~\href{http://tournesol.app}{Tournesol \emoji{sunflower}}}{Co-founder\&ML engineer}{Non-profit designing better recommender systems, Lausanne, Switzerland \emoji{flag-ch}}{May 2020 -- May 2021}
 		\myitem \mybold{Co-founded a startup} working on contributor-driven collaborative recommender systems
 		\myitem \mybold{Responsible} for \mylink~\href{https://github.com/tournesol-app/tournesol/tree/old_main}{back-end engineering using \mybold{Django}, and Machine Learning engineering with \mybold{TensorFlow}, the API server}
 		\myitem \mybold{Responsible} as well for system administration (Debian), (partially) front-end development with \mybold{React.js} and parts of algorithm design
@@ -269,18 +270,28 @@ Reinforcement Learning Environments via Model Sparsity"}
 %\dotfill
 
 \newpage
-\dotfill
-\vspace{40pt}
+\newcommand{\middlewave}[1]{\begin{center} \mybold{\raisebox{0.5em}{\uwave{\hspace{#1}}}} \end{center} }
+%\hspace{5cm}\dotfill\hspace{5cm}
+\,
+
+% full color
+\def\imgpref{}
+\definecolor{extrasG}{RGB}{50,  150,  50}
+\vspace{30pt}
 \begin{center}
 	\mybold{
 		%{\Huge \ding{80}}\\\vspace{10pt}
-		{\em\Huge EXTRAS\ding{80}}
+		\middlewave{18cm}
+		{\Huge \color{extrasG} EXTRAS
+		} %\ding{80}
+		\middlewave{18cm}
 		\rfoot{Extra page \thepage \hspace{1pt} of 2}
 		\setcounter{page}{1}
 		%\\\vspace{10pt} {\Huge\ding{80}\ding{80}\ding{80}}
 	}
 \end{center}
-\vspace{40pt}
+\vspace{30pt}
+
 %\changefontsizes{7pt}
 
 \begin{rSection}{Extra Experience}
