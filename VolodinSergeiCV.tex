@@ -67,8 +67,8 @@
 %\setulcolor{ulcolor}
 
 %\newcommand*{\mybold}[1]{{\contourlength{0.1ex}\contournumber{10}\contour{ulcolor}{#1}}}
-\definecolor{pinkunderline}{RGB}{100, 0, 100}
-\newcommand*{\mybold}[1]{{\color{pinkunderline} #1}}
+
+\newcommand*{\mybold}[1]{{\color{gray} #1}}
 \newcommand*{\myboldq}[1]{{#1}}
 %\newcommand*{\mybold}[1]{\ul{#1}}
 
@@ -107,16 +107,15 @@
 \FPsub\result{\thedatetwo}{\thedateone}
 \FPdiv\myage{\result}{365.2425}
 \newcommand{\mylink}{{\color{gray}\faExternalLink}}
-\name{Sergia VOLODIN (Sergei)}
+\name{Sergei VOLODIN}
 %\contourlength{1pt}
 %\ontourumber{10}
-\photo{./photo/me-semi-pink.jpeg}
-\address{\mylink~\href{https://sergia.ch}{sergia.ch} / Haldenstrasse 83, 8045 Z\"{u}rich, Switzerland \emoji{flag-ch}}
+\photo{./photo/me-blue.jpeg}
+\address{\mylink~\href{https://sergeivolodin.github.io}{sergeivolodin.github.io} / Kasernenstrasse 29, 8004 Z\"{u}rich, Switzerland \emoji{flag-ch}}
 \address{Birth date: 3rd of October 1994 (\FPtrunc\myage{\myage}{0}\myage\,years), Russian \emoji{flag-ru}}
-\address{she/her. sergia94 at protonmail dot com \href{https://sergia.ch}{\emoji{internet}}
-	\href{https://twitter.com/sergia_ch}{\imgd{twitter}}
-	\href{http://linkedin.com/in/sergeivolodin/}{\imgd{li}} \href{http://github.com/sergia-ch}{\imgd{gh}}
-	\emoji{telephone}  +41 78 732 01 34}
+\address{sergei.volodin.ch at gmail dot com \href{https://sergeivolodin.github.io}{\emoji{internet}}
+	\href{http://linkedin.com/in/sergeivolodin/}{\imgd{li}} \href{http://github.com/sergeivolodin}{\imgd{gh}}
+	\emoji{telephone}  +41 77 958 45 98}
 %\twocolumn
 
 \begin{document}
@@ -125,16 +124,15 @@
 	 \sffamily
 	
 \definecolor{grayitem}{RGB}{80, 80, 80}
-\definecolor{pinkitem}{RGB}{100, 0, 100}
-\definecolor{headingcolor}{RGB}{50, 0, 100}
+\definecolor{headingcolor}{RGB}{50, 50, 50}
 \definecolor{graypoint}{RGB}{50, 50, 50}
 \definecolor{gray}{RGB}{150, 150, 150}
-\definecolor{hrulecolor}{RGB}{25, 0, 150}
-\newcommand{\myitem}{\item[\textcolor{pinkitem}{\Huge\raisebox{-2pt}{$\cdot$}}]}
+\definecolor{hrulecolor}{RGB}{50, 50, 50}
+\newcommand{\myitem}{\item[\textcolor{gray}{\Huge\raisebox{-2pt}{$\cdot$}}]}
 
 \begin{rSection}{Abstract}
 
-{{\color{pinkitem} \texttt{\$ Sergia:}} artsy software engineer and young scientist with interests in open-source democratic and consensual technology, with experience of research and development in industry, academia and startups. Have a Swiss degree. Looking for an inclusive and diverse team where we all share and discuss what is in our heart, to create something honest, awesome, and balanced to give people what they need.}
+Software engineer and young scientist with with experience in research and development in industry, academia and startups. Have a Swiss degree. Looking for a vibrant team to work on creative projects.
 
 \begin{center}
 \logo{Logo_EPFL.pdf} {\large ,\,}
@@ -160,7 +158,7 @@
 %\item School of Computer and Communication Sciences
 \myitem Master's degree in \mybold{Computer Science,} minor in Computational \mybold{Neurosciences}, GPA: \mybold{5.67}/6
 \myitem Research Assistant position (2017--2019)
-\myitem Thesis \mylink~\href{https://sergia-ch.github.io/causality-simplicity/CauseOccam_Learning_Interpretable_Abstract_Representations_in_Reinforcement_Learning_Environments_via_Model_Sparsity.pdf}{"CauseOccam: Learning Interpretable Abstract Representations in
+\myitem Thesis \mylink~\href{https://sergeivolodin.github.io/causality-simplicity/CauseOccam_Learning_Interpretable_Abstract_Representations_in_Reinforcement_Learning_Environments_via_Model_Sparsity.pdf}{"CauseOccam: Learning Interpretable Abstract Representations in
 Reinforcement Learning Environments via Model Sparsity"}
 \end{rSubsection}
 %\hrule
@@ -179,13 +177,13 @@ Reinforcement Learning Environments via Model Sparsity"}
 	\item \myboldq{Environment:} \mybold{Git, \LaTeX, Bash, Debian/Ubuntu Linux}
 	\item \myboldq{Scientific skills:} \mybold{experimental} sections of research papers, working on \mybold{theoretical} problems, scientific presentation, data analysis
 	\item \myboldq{Software development:} \mybold{agile} software development (Scrum), CI/CD, debugging, design patterns, concurrent and distributed systems, {\small TCP/IP networking, AVR microcontrollers, Arduino platform, team and project management in \mybold{small startups}}
-	\item \myboldq{Languages:} \emoji{flag-us} English: \mylink~\href{https://sergia-ch.github.io/epfl/TOEFL.pdf}{TOEFL iBT \mybold{113}/120}, {\small \emoji{flag-fr} French: A1, \emoji{flag-ru} Russian: native}
+	\item \myboldq{Languages:} \emoji{flag-us} English: \mylink~\href{https://sergeivolodin.github.io/epfl/TOEFL.pdf}{TOEFL iBT \mybold{113}/120}, {\small \emoji{flag-fr} French: A1, \emoji{flag-ru} Russian: native}
 \end{rSection}
 
 \begin{rSection}{Work and research experience}
 	\begin{rSubsection}{\mylink~\href{https://faveforfans.com}{Fave For Fans \emoji{fave}}}{Software Engineer}{Platform dedicated to passionate fans, Z\"{u}rich, Switzerland \emoji{flag-ch}}{Sep 2021 -- May 2022}
 		\myitem \mybold{Responsible} for the backend development with microservices on Cloudflare Workers with TypeScript, an ArangoDB-based database, automatic data schema validation, and CI/CD with integration tests. First full-time engineer at the company.
-		\myitem \mybold{Proposing} and discussing ways to create \mylink~\href{https://sergia-ch.github.io/fave/direct_sharing.png}{more \mybold{ethical and democratic social media} sharing mechanisms}, organizing voting in the team to discuss proposals ("mini \mylink~\href{https://en.wikipedia.org/wiki/Stakeholder_theory}{Stakeholder Capitalism}")
+		\myitem \mybold{Proposing} and discussing ways to create \mylink~\href{https://sergeivolodin.github.io/fave/direct_sharing.png}{more \mybold{ethical and democratic social media} sharing mechanisms}, organizing voting in the team to discuss proposals ("mini \mylink~\href{https://en.wikipedia.org/wiki/Stakeholder_theory}{Stakeholder Capitalism}")
 		\myitem \mybold{Research} into ways of obtaining data from third-party services with privacy guarantees
 		\myitem \mybold{Conducted} analysis of the database to create better ranking results
 	\end{rSubsection}
@@ -257,13 +255,13 @@ Reinforcement Learning Environments via Model Sparsity"}
 \item A. Dymarsky, E. Gryazina, \mybold{S. Volodin}, B. Polyak. \mylink~\href{https://arxiv.org/abs/1810.00896}{Geometry of quadratic maps via convex relaxation}, 2018. Exp-s, theory, writing.% Under review of {\bf SIOPT}
 %\item {\bf S. Volodin}, M. Popova, V. Strijov \mylink~\href{http://itas2016.iitp.ru/pdf/1570303389.pdf}{Probabilistic prediction of nuclear receptors’ biological activity}. Proceedings of ITaS, 2016, {\em in Russian}. Implemented the Probabilistic Classifier Chains algorithm using Python and tried it on the dataset
 %\todo[inline]{Publish FT on arXiv and update my CV}
-\item A. Petrov, \mybold{S. Volodin} \mylink~\href{https://sergia-ch.github.io/other-projects/dj/PHDK349.pdf}{Janibekov's effect and the laws of mechanics}. Doklady Akademii Nauk, 2013. Graphics for the article, experiments, first year of my BSc
+\item A. Petrov, \mybold{S. Volodin} \mylink~\href{https://sergeivolodin.github.io/other-projects/dj/PHDK349.pdf}{Janibekov's effect and the laws of mechanics}. Doklady Akademii Nauk, 2013. Graphics for the article, experiments, first year of my BSc
 \end{rSection}
 
 \begin{rSection}{Master's thesis}
 	\begin{rSubsection}{EPFL, Laboratory for Computational Neuroscience \emoji{flag-ch}}{Master's Thesis student}{Lausanne, Switzerland}{Oct 2020 -- Apr 2021}
-		\myitem Designed \mylink~\href{https://github.com/sergia-ch/causality-disentanglement-rl}{an algorithm} with \mybold{Python 3, Pytorch and ray} based on the \mylink~"\href{https://arxiv.org/abs/1709.08568}{Consciousness Prior}" proposal that finds a simple causal model of an RL environment in the general case from pixels. The project is a continuation of my Google Research internship (see below)
-		\myitem The algorithm works on benchmarks, see \mylink~\href{https://sergia-ch.github.io/causality-simplicity/CauseOccam_Learning_Interpretable_Abstract_Representations_in_Reinforcement_Learning_Environments_via_Model_Sparsity.pdf}{my thesis} for more details
+		\myitem Designed \mylink~\href{https://github.com/sergeivolodin/causality-disentanglement-rl}{an algorithm} with \mybold{Python 3, Pytorch and ray} based on the \mylink~"\href{https://arxiv.org/abs/1709.08568}{Consciousness Prior}" proposal that finds a simple causal model of an RL environment in the general case from pixels. The project is a continuation of my Google Research internship (see below)
+		\myitem The algorithm works on benchmarks, see \mylink~\href{https://sergeivolodin.github.io/causality-simplicity/CauseOccam_Learning_Interpretable_Abstract_Representations_in_Reinforcement_Learning_Environments_via_Model_Sparsity.pdf}{my thesis} for more details
 		\myitem The work includes \mybold{theoretical results on abstraction learning as well as a code base with tests and documentation}
 		\myitem The thesis defended on the 21st of April 2021 with Adam Gleave (Berkeley/DeepMind) as an external expert
 	\end{rSubsection}
@@ -280,16 +278,17 @@ Reinforcement Learning Environments via Model Sparsity"}
 \definecolor{extrasG}{RGB}{50,  150,  50}
 \vspace{30pt}
 \begin{center}
-	\mybold{
-		%{\Huge \ding{80}}\\\vspace{10pt}
-		\middlewave{18cm}
-		{\Huge \color{extrasG} EXTRAS
-		} %\ding{80}
-		\middlewave{18cm}
-		\rfoot{Extra page \thepage \hspace{1pt} of 2}
-		\setcounter{page}{1}
-		%\\\vspace{10pt} {\Huge\ding{80}\ding{80}\ding{80}}
-	}
+EXTRAS
+%	\mybold{
+%		%{\Huge \ding{80}}\\\vspace{10pt}
+%		\middlewave{18cm}
+%		{\Huge \color{extrasG} EXTRAS
+%		} %\ding{80}
+%		\middlewave{18cm}
+%		\rfoot{Extra page \thepage \hspace{1pt} of 2}
+%		\setcounter{page}{1}
+%		%\\\vspace{10pt} {\Huge\ding{80}\ding{80}\ding{80}}
+%	}
 \end{center}
 \vspace{30pt}
 
